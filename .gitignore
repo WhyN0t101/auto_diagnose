@@ -1,0 +1,15 @@
+# Frontend dependencies
+auto_diagnose_frontend/node_modules/
+
+# Backend Python virtual environment
+auto_diagnose_backend/venv/
+
+# Build artifacts
+auto_diagnose_frontend/dist/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
