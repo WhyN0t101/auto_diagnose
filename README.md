@@ -55,11 +55,11 @@ cd <your-repo-name>
    ```
 3. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install flask
    ```
 4. Run the Flask server:
    ```bash
-   python app.py
+   python backend.py
    ```
 
    The backend will be accessible at `http://127.0.0.1:5000`.
