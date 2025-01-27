@@ -124,8 +124,11 @@ def generate_pdf():
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Detailed Answers:", ln=True)
     pdf.set_font("Arial", size=12)
+
+    # Assuming you have access to the `questions` variable here
     for idx, answer in enumerate(answers):
-        question_text = f"Question {idx + 1}"  # Update this to get the actual question text if available
+        # Fetch the corresponding question text from the questions list
+        question_text = questions[idx]["text"]  # Replace "text" with the actual key for the question text in your JSON
         pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\nAnswer: {answer}")
         pdf.ln(5)
 
