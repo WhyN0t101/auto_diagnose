@@ -133,6 +133,21 @@
           </svg>
           Restart Diagnostic
         </button>
+
+        <button
+          @click="generatePDF"
+          class="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-lg text-white flex items-center gap-2 mx-auto transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          Download PDF
+        </button>
       </div>
     </div>
   </div>
@@ -156,6 +171,31 @@ export default {
     };
   },
   methods: {
+    async generatePDF() {
+      try {
+          const payload = {
+              answers: Object.values(this.selectedAnswers), // Convert answers to array
+              category_scores: this.categoryScores, // Scores per category
+              category_max_scores: this.categoryMaxScores, // Max scores per category
+              recommendations: this.recommendations, // Recommendations
+          };
+
+          const response = await axios.post(
+              "http://127.0.0.1:5000/api/generate-pdf",
+              payload,
+              { responseType: "blob" } // Ensures response is treated as a file
+          );
+
+          // Create a downloadable link for the PDF
+          const blob = new Blob([response.data], { type: "application/pdf" });
+          const link = document.createElement("a");
+          link.href = window.URL.createObjectURL(blob);
+          link.download = "diagnostic_report.pdf";
+          link.click();
+      } catch (error) {
+          console.error("Error generating PDF:", error.response?.data || error.message);
+      }
+    },
     async fetchQuestions() {
       try {
         const response = await axios.get("http://127.0.0.1:5000/api/questions");
