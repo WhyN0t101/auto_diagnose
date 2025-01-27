@@ -19,7 +19,7 @@ def get_questions():
 # Endpoint to process answers and calculate score
 @app.route("/api/submit", methods=["POST"])
 def submit_answers():
-    data = request.json
+    data = request.json  # Expecting {"answers": [...]}
 
     if not data or "answers" not in data:
         return jsonify({"error": "Invalid input"}), 400
@@ -33,10 +33,12 @@ def submit_answers():
     category_max_scores = {}
     max_score = 0
 
+    # Calculate total score, category scores, and max score
     for i, user_answer in enumerate(answers):
         question = questions[i]
         category = question["category"]
 
+        # Initialize category scores
         if category not in category_scores:
             category_scores[category] = 0
             category_max_scores[category] = 0
@@ -45,33 +47,43 @@ def submit_answers():
         category_max_scores[category] += max_question_score
         max_score += max_question_score
 
+        # Add user score for the category
         for option in question["options"]:
             if option["text"] == user_answer:
                 total_score += option["score"]
                 category_scores[category] += option["score"]
                 break
 
+    # Calculate percentage score
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
+
+    # Generate recommendations based on score
     recommendations = generate_recommendations(total_score)
 
     return jsonify({
         "percentage_score": round(percentage_score, 2),
         "category_scores": category_scores,
         "category_max_scores": category_max_scores,
-        "recommendations": recommendations,
+        "recommendations": recommendations
     })
 
 @app.route("/api/generate-pdf", methods=["POST"])
 def generate_pdf():
-    data = request.json
+    data = request.json  # Expecting {"answers": [...], "category_scores": {...}, "category_max_scores": {...}, "recommendations": "..."}
 
-    if not data or "answers" not in data or "category_scores" not in data or "recommendations" not in data:
+    # Validate input
+    if not data or "answers" not in data or "category_scores" not in data or "category_max_scores" not in data or "recommendations" not in data:
         return jsonify({"error": "Invalid input"}), 400
 
     answers = data["answers"]
     category_scores = data["category_scores"]
-    category_max_scores = data.get("category_max_scores", {})
+    category_max_scores = data["category_max_scores"]
     recommendations = data["recommendations"]
+
+    # Calculate overall score
+    total_score = sum(category_scores.values())
+    max_score = sum(category_max_scores.values())
+    percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
 
     # Create a PDF object
     pdf = FPDF()
@@ -84,13 +96,11 @@ def generate_pdf():
     pdf.cell(200, 10, txt="Cybersecurity Diagnostic Report", ln=True, align="C")
     pdf.ln(10)
 
-    # Total Score
-    total_score = sum(category_scores.values())
-    max_total_score = sum(category_max_scores.values())
-    percentage_score = (total_score / max_total_score) * 100 if max_total_score > 0 else 0
-
+    # Overall Score
     pdf.set_font("Arial", style="B", size=14)
-    pdf.cell(200, 10, txt=f"Total Score: {total_score}/{max_total_score} ({round(percentage_score, 2)}%)", ln=True)
+    pdf.cell(200, 10, txt="Overall Score:", ln=True)
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, txt=f"{round(percentage_score, 2)}% ({total_score}/{max_score})", ln=True)
     pdf.ln(10)
 
     # Recommendations
@@ -105,8 +115,9 @@ def generate_pdf():
     pdf.cell(200, 10, txt="Category Scores:", ln=True)
     pdf.set_font("Arial", size=12)
     for category, score in category_scores.items():
-        max_score = category_max_scores.get(category, "N/A")
-        pdf.cell(200, 10, txt=f"{category}: {score}/{max_score}", ln=True)
+        max_cat_score = category_max_scores.get(category, "N/A")
+        pdf.cell(200, 10, txt=f"{category}: {score}/{max_cat_score}", ln=True)
+
     pdf.ln(10)
 
     # Detailed Answers
@@ -114,13 +125,17 @@ def generate_pdf():
     pdf.cell(200, 10, txt="Detailed Answers:", ln=True)
     pdf.set_font("Arial", size=12)
     for idx, answer in enumerate(answers):
-        pdf.cell(200, 10, txt=f"Q{idx + 1}: {answer}", ln=True)
+        question_text = f"Question {idx + 1}"  # Update this to get the actual question text if available
+        pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\nAnswer: {answer}")
+        pdf.ln(5)
 
-    # Save the PDF to a BytesIO stream
+    # Save the PDF to a string and write to a BytesIO stream
     pdf_output = io.BytesIO()
-    pdf_output.write(pdf.output(dest='S').encode('latin1'))  # Output PDF as string and write to BytesIO
+    pdf_string = pdf.output(dest="S").encode("latin1")  # Generate PDF as a string
+    pdf_output.write(pdf_string)
     pdf_output.seek(0)
 
+    # Send the PDF as a response
     return send_file(
         pdf_output,
         mimetype="application/pdf",
@@ -128,6 +143,11 @@ def generate_pdf():
         download_name="diagnostic_report.pdf",
     )
 
+
+
+
+
+# Function to generate recommendations based on score
 def generate_recommendations(score):
     if score >= 400:
         return "Excellent! Your cybersecurity posture is strong. Maintain current practices."
