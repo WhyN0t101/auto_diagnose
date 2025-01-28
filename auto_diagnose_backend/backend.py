@@ -116,9 +116,10 @@ def generate_pdf():
         "Third-Party Risk Management": ["OneTrust", "Prevalent"]
     }
 
-    category_tool_recommendations = {}
-    for category in weak_categories:
-        category_tool_recommendations[category] = tool_recommendations.get(category, [])[:2]
+    category_tool_recommendations = {
+        category: tool_recommendations.get(category, [])[:2]
+        for category in weak_categories if category in tool_recommendations
+    }
 
     # Create PDF
     pdf = FPDF()
@@ -155,14 +156,14 @@ def generate_pdf():
     pdf.multi_cell(0, 10, recommendations)
     pdf.ln(10)
 
-    # Suggested Tools
-    pdf.set_font("Arial", style="B", size=14)
-    pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
-    pdf.set_font("Arial", size=12)
-    for category, tools in category_tool_recommendations.items():
-        if tools:
+    # **Only Add Suggested Tools if Any Exist**
+    if category_tool_recommendations:
+        pdf.set_font("Arial", style="B", size=14)
+        pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
+        pdf.set_font("Arial", size=12)
+        for category, tools in category_tool_recommendations.items():
             pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
-    pdf.ln(10)
+        pdf.ln(10)
 
     # **Detailed Answers Section (New Page)**
     pdf.add_page()  # Start on a new page
