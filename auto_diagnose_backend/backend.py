@@ -11,6 +11,17 @@ CORS(app)  # Allow cross-origin requests from the frontend
 with open("questions.json") as f:
     questions = json.load(f)
 
+# Function to generate recommendations based on category scores
+def generate_recommendations(category_scores, category_max_scores):
+    weak_categories = [
+        category for category, score in category_scores.items()
+        if (score / category_max_scores[category]) < 0.5
+    ]
+    
+    if weak_categories:
+        return f"Focus on strengthening key areas: {', '.join(weak_categories)}.", weak_categories
+    return "Good job! No major weaknesses detected.", []
+
 # Endpoint to fetch questions
 @app.route("/api/questions", methods=["GET"])
 def get_questions():
@@ -57,8 +68,8 @@ def submit_answers():
     # Calculate percentage score
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
 
-    # Generate recommendations based on score
-    recommendations = generate_recommendations(total_score)
+    # Generate recommendations based on score and category
+    recommendations, weak_areas = generate_recommendations(category_scores, category_max_scores)
 
     return jsonify({
         "percentage_score": round(percentage_score, 2),
@@ -69,7 +80,7 @@ def submit_answers():
 
 @app.route("/api/generate-pdf", methods=["POST"])
 def generate_pdf():
-    data = request.json  # Expecting {"answers": [...], "category_scores": {...}, "category_max_scores": {...}, "recommendations": "..."}
+    data = request.json
 
     # Validate input
     if not data or "answers" not in data or "category_scores" not in data or "category_max_scores" not in data or "recommendations" not in data:
@@ -91,6 +102,9 @@ def generate_pdf():
         for category, score in category_scores.items()
     }
 
+    # Identify categories below 50%
+    weak_categories = [category for category, percentage in category_percentages.items() if percentage < 50]
+
     # Suggested tools based on category scores
     tool_recommendations = {
         "Access Control": ["Okta", "Microsoft Entra ID (Azure AD)"],
@@ -103,13 +117,8 @@ def generate_pdf():
     }
 
     category_tool_recommendations = {}
-    for category, percentage in category_percentages.items():
-        if percentage <= 50:
-            category_tool_recommendations[category] = tool_recommendations.get(category, [])[:2]  # Recommend 2 tools
-        elif 50 < percentage <= 75:
-            category_tool_recommendations[category] = tool_recommendations.get(category, [])[:1]  # Recommend 1 tool
-        else:
-            category_tool_recommendations[category] = []  # No tools needed
+    for category in weak_categories:
+        category_tool_recommendations[category] = tool_recommendations.get(category, [])[:2]
 
     # Create PDF
     pdf = FPDF()
@@ -122,18 +131,11 @@ def generate_pdf():
     pdf.cell(200, 10, txt="Cybersecurity Diagnostic Report", ln=True, align="C")
     pdf.ln(10)
 
-    # Overall Score (as percentage)
+    # Overall Score (inverted format)
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Overall Score:", ln=True)
     pdf.set_font("Arial", size=12)
-    pdf.cell(200, 10, txt=f"{round(percentage_score, 2)}% ({total_score}/{max_score})", ln=True)
-    pdf.ln(10)
-
-    # Recommendations
-    pdf.set_font("Arial", style="B", size=14)
-    pdf.cell(200, 10, txt="Recommendations:", ln=True)
-    pdf.set_font("Arial", size=12)
-    pdf.multi_cell(0, 10, recommendations)
+    pdf.cell(200, 10, txt=f"{total_score}/{max_score} ({round(percentage_score, 2)}%)", ln=True)
     pdf.ln(10)
 
     # Category Scores
@@ -146,6 +148,13 @@ def generate_pdf():
 
     pdf.ln(10)
 
+    # Recommendations
+    pdf.set_font("Arial", style="B", size=14)
+    pdf.cell(200, 10, txt="Recommendations:", ln=True)
+    pdf.set_font("Arial", size=12)
+    pdf.multi_cell(0, 10, recommendations)
+    pdf.ln(10)
+
     # Suggested Tools
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
@@ -155,40 +164,35 @@ def generate_pdf():
             pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
     pdf.ln(10)
 
-    # Detailed Answers with full question text
+    # **Detailed Answers Section (New Page)**
+    pdf.add_page()  # Start on a new page
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Detailed Answers:", ln=True)
+    pdf.ln(5)
+
     pdf.set_font("Arial", size=12)
     for idx, answer in enumerate(answers):
-        question_text = questions[idx]["text"]  # Get actual question text from JSON
-        pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\nAnswer: {answer}")
+        question_text = questions[idx]["text"]
+        recommendation = next(
+            (opt["recommendation"] for opt in questions[idx]["options"] if opt["text"] == answer),
+            "No specific recommendation"
+        )
+        
+        pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\nAnswer: {answer}\nRecommendation: {recommendation}")
         pdf.ln(5)
 
-    # Save the PDF to a string (single instance)
+    # Save and return the PDF
     pdf_output = io.BytesIO()
-    pdf_string = pdf.output(dest="S").encode("latin1")  # Generate PDF as a string
+    pdf_string = pdf.output(dest="S").encode("latin1")
     pdf_output.write(pdf_string)
     pdf_output.seek(0)
 
-    # Send the single generated PDF as a response
     return send_file(
         pdf_output,
         mimetype="application/pdf",
         as_attachment=True,
         download_name="diagnostic_report.pdf",
     )
-
-
-# Function to generate recommendations based on score
-def generate_recommendations(score):
-    if score >= 400:
-        return "Excellent! Your cybersecurity posture is strong. Maintain current practices."
-    elif 300 <= score < 400:
-        return "Good job, but there’s room for improvement in specific areas."
-    elif 200 <= score < 300:
-        return "Fair. Focus on strengthening key areas like access control and incident response."
-    else:
-        return "Poor. Consider immediate improvements in policies, training, and technology."
 
 if __name__ == "__main__":
     app.run(debug=True)
