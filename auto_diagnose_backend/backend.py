@@ -199,8 +199,7 @@ def generate_pdf():
         for category, tools in category_tool_recommendations.items():
             pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
         pdf.ln(10)
-
-    # ✅ Add Answers
+        
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(0, 10, txt="Answers Summary:" if lang == "en" else "Respostas Escolhidas:", ln=True)
     pdf.ln(5)
@@ -209,6 +208,8 @@ def generate_pdf():
     for idx, answer in enumerate(answers):
         pdf.multi_cell(0, 10, f"Q{idx + 1}: {answer}")
         pdf.ln(2)
+
+    
 
     # ✅ Ensure proper encoding and output
     pdf_output = io.BytesIO()
@@ -227,3 +228,27 @@ def generate_pdf():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+'''
+    # ✅ Add Answers
+    pdf.set_font("Arial", style="B", size=14)
+    pdf.cell(200, 10, txt="Detailed Answers:" if lang == "en" else "Respostas Detalhadas:", ln=True)
+    pdf.ln(5)
+
+    pdf.set_font("Arial", size=12)
+    for idx, answer in enumerate(answers):
+        question_text = questions_data[idx]["text"][lang]  # Get question text in the selected language
+
+        # Find the corresponding recommendation in the selected language
+        recommendation = next(
+            (opt["recommendation"][lang] for opt in questions_data[idx]["options"] if opt["text"][lang] == answer),
+            "No specific recommendation" if lang == "en" else "Sem recomendação específica"
+        )
+        
+        # Add question, answer, and recommendation to PDF
+        pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\n"
+                            f"{'Answer' if lang == 'en' else 'Resposta'}: {answer}\n"
+                            f"{'Recommendation' if lang == 'en' else 'Recomendação'}: {recommendation}")
+        pdf.ln(5) 
+'''
