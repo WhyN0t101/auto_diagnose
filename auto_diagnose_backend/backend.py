@@ -85,7 +85,33 @@ def generate_pdf():
     max_score = sum(category_max_scores.values())
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
 
-    # Create a PDF object
+    # Calculate category percentages
+    category_percentages = {
+        category: (score / category_max_scores[category]) * 100 if category_max_scores[category] > 0 else 0
+        for category, score in category_scores.items()
+    }
+
+    # Suggested tools based on category scores
+    tool_recommendations = {
+        "Access Control": ["Okta", "Microsoft Entra ID (Azure AD)"],
+        "Data Protection": ["VeraCrypt", "BitLocker"],
+        "Employee Awareness and Training": ["KnowBe4", "Infosec IQ"],
+        "Governance and Policies": ["NIST Cybersecurity Framework", "CIS Controls"],
+        "Incident Response and Recovery": ["Splunk SOAR", "IBM Resilient"],
+        "Network Security": ["Snort", "Wireshark"],
+        "Third-Party Risk Management": ["OneTrust", "Prevalent"]
+    }
+
+    category_tool_recommendations = {}
+    for category, percentage in category_percentages.items():
+        if percentage <= 50:
+            category_tool_recommendations[category] = tool_recommendations.get(category, [])[:2]  # Recommend 2 tools
+        elif 50 < percentage <= 75:
+            category_tool_recommendations[category] = tool_recommendations.get(category, [])[:1]  # Recommend 1 tool
+        else:
+            category_tool_recommendations[category] = []  # No tools needed
+
+    # Create PDF
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
@@ -96,7 +122,7 @@ def generate_pdf():
     pdf.cell(200, 10, txt="Cybersecurity Diagnostic Report", ln=True, align="C")
     pdf.ln(10)
 
-    # Overall Score
+    # Overall Score (as percentage)
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Overall Score:", ln=True)
     pdf.set_font("Arial", size=12)
@@ -116,38 +142,41 @@ def generate_pdf():
     pdf.set_font("Arial", size=12)
     for category, score in category_scores.items():
         max_cat_score = category_max_scores.get(category, "N/A")
-        pdf.cell(200, 10, txt=f"{category}: {score}/{max_cat_score}", ln=True)
+        pdf.cell(200, 10, txt=f"{category}: {score}/{max_cat_score} ({round(category_percentages[category], 2)}%)", ln=True)
 
     pdf.ln(10)
 
-    # Detailed Answers
+    # Suggested Tools
+    pdf.set_font("Arial", style="B", size=14)
+    pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
+    pdf.set_font("Arial", size=12)
+    for category, tools in category_tool_recommendations.items():
+        if tools:
+            pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
+    pdf.ln(10)
+
+    # Detailed Answers with full question text
     pdf.set_font("Arial", style="B", size=14)
     pdf.cell(200, 10, txt="Detailed Answers:", ln=True)
     pdf.set_font("Arial", size=12)
-
-    # Assuming you have access to the `questions` variable here
     for idx, answer in enumerate(answers):
-        # Fetch the corresponding question text from the questions list
-        question_text = questions[idx]["text"]  # Replace "text" with the actual key for the question text in your JSON
+        question_text = questions[idx]["text"]  # Get actual question text from JSON
         pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\nAnswer: {answer}")
         pdf.ln(5)
 
-    # Save the PDF to a string and write to a BytesIO stream
+    # Save the PDF to a string (single instance)
     pdf_output = io.BytesIO()
     pdf_string = pdf.output(dest="S").encode("latin1")  # Generate PDF as a string
     pdf_output.write(pdf_string)
     pdf_output.seek(0)
 
-    # Send the PDF as a response
+    # Send the single generated PDF as a response
     return send_file(
         pdf_output,
         mimetype="application/pdf",
         as_attachment=True,
         download_name="diagnostic_report.pdf",
     )
-
-
-
 
 
 # Function to generate recommendations based on score
