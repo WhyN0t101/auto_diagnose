@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white p-4">
+  <div class="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4 lg:px-6">
     <!-- Navigation -->
-    <nav class="absolute top-6 left-6 w-full max-w-2xl">
+    <nav class="absolute top-6 left-6 w-full max-w-4xl">
       <button
         @click="$router.push('/')"
         class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg transition-colors"
@@ -23,7 +23,7 @@
     <!-- Questions Section -->
     <div
       v-else-if="currentQuestionIndex < questions.length"
-      class="w-full max-w-2xl bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl text-white p-8 border border-white/20 animate-fade-in"
+      class="w-full max-w-4xl bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl text-white p-6 md:p-8 border border-white/20 animate-fade-in"
     >
       <div class="mb-6">
         <h2 class="text-2xl font-bold mb-2 text-blue-200">
@@ -57,50 +57,47 @@
       </div>
 
       <!-- Navigation Buttons -->
-        <div class="flex items-center mt-8">
-          <!-- Previous Button (Always on the Left) -->
-          <button
-            v-if="currentQuestionIndex > 0"
-            @click="prevQuestion"
-            class="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h18" />
-            </svg>
-            Previous
-          </button>
+      <div class="flex justify-between md:justify-end items-center mt-8 space-x-4">
+        <button
+          v-if="currentQuestionIndex > 0"
+          @click="prevQuestion"
+          class="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h18" />
+          </svg>
+          Previous
+        </button>
 
-          <!-- Next Button (Always on the Right) -->
-          <button
-            v-if="currentQuestionIndex < questions.length - 1"
-            @click="nextQuestion"
-            class="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white transition-colors ml-auto"
-            :disabled="!selectedAnswers[currentQuestionIndex]"
-          >
-            Next
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </button>
+        <button
+          v-if="currentQuestionIndex < questions.length - 1"
+          @click="nextQuestion"
+          class="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white transition-colors"
+          :disabled="!selectedAnswers[currentQuestionIndex]"
+        >
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </button>
 
-          <!-- Submit Button (Replaces Next on Last Question & Stays on Right) -->
-          <button
-            v-if="currentQuestionIndex === questions.length - 1"
-            @click="submitAnswers"
-            class="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white transition-colors ml-auto"
-            :disabled="!selectedAnswers[currentQuestionIndex]"
-          >
-            Submit
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </button>
-        </div>
+        <button
+          v-if="currentQuestionIndex === questions.length - 1"
+          @click="submitAnswers"
+          class="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white transition-colors"
+          :disabled="!selectedAnswers[currentQuestionIndex]"
+        >
+          Submit
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Results Section -->
-    <div v-else class="text-center max-w-2xl w-full animate-fade-in">
-      <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 shadow-2xl">
+    <div v-else class="text-center max-w-4xl w-full animate-fade-in">
+      <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 md:p-8 border border-white/20 shadow-2xl">
         <h2 class="text-3xl font-bold mb-4 text-blue-200">Diagnostic Results</h2>
 
         <!-- Overall Percentage -->
@@ -124,9 +121,8 @@
         <!-- Recommendations -->
         <p class="text-lg mt-6 text-gray-100">{{ recommendations }}</p>
 
-        <!-- Restart and Download PDF Buttons Side by Side -->
-        <div class="flex justify-center gap-4 mt-6">
-          <!-- Restart Button -->
+        <!-- Buttons (Side by Side) -->
+        <div class="flex flex-col md:flex-row justify-center gap-4 mt-6">
           <button
             @click="restart"
             class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-white flex items-center gap-2 transition-colors"
@@ -137,7 +133,6 @@
             Restart Diagnostic
           </button>
 
-          <!-- Download PDF Button -->
           <button
             @click="generatePDF"
             class="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-lg text-white flex items-center gap-2 transition-colors"
@@ -152,6 +147,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import axios from "axios";
