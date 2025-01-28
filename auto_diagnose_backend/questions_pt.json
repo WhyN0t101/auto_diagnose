@@ -1,0 +1,1102 @@
+[
+    {
+        "id": 1,
+        "category": "Governança e Politicas",
+        "text": "Você tem uma política de segurança cibernética escrita e aprovada?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            },
+            {
+                "text": "Em andamento",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Governança e Politicas",
+        "text": "As funções e responsabilidades de segurança cibernética são claramente definidas em sua organização?",
+        "options": [
+            {
+                "text": "Sim, documentado e designado",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Sim, mas informal",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Governança e Politicas",
+        "text": "Você realiza avaliações anuais de risco de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            },
+            {
+                "text": "Ocasionalmente",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category": "Governança e Politicas",
+        "text": "Você tem um programa de conscientização sobre segurança cibernética para funcionários?",
+        "options": [
+            {
+                "text": "Sim, em andamento e obrigatório",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Sim, mas pouco frequente",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "category": "Governança e Politicas",
+        "text": "Você aloca um orçamento específico para iniciativas de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, orçamento suficiente",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Sim, mas orçamento limitado",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "category": "Network Security",
+        "text": "Você tem um firewall instalado e configurado em sua rede?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            },
+            {
+                "text": "Não tenho certeza",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "category": "Network Security",
+        "text": "Você usa sistemas de detecção e prevenção de intrusões (IDS/IPS)?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            },
+            {
+                "text": "Não tenho certeza",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "category": "Network Security",
+        "text": "Você monitora o tráfego de rede em busca de atividades suspeitas?",
+        "options": [
+            {
+                "text": "Sim, continuamente",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Sim, mas não contínuo",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "category": "Network Security",
+        "text": "Você realiza varreduras regulares de vulnerabilidade em seus sistemas?",
+        "options": [
+            {
+                "text": "Sim, mensalmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "category": "Network Security",
+        "text": "Você segenta sua rede para isolar dados confidenciais?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Parcialmente",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "category": "Access Control",
+        "text": "Todos os funcionários têm credenciais exclusivas de login?",
+        "options": [
+            {
+                "text": "Sim",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Não, contas compartilhadas são usadas",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            },
+            {
+                "text": "Não tenho certeza",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "category": "Access Control",
+        "text": "A autenticação multifatorial (MFA) é ativada para todos os sistemas críticos?",
+        "options": [
+            {
+                "text": "Sim para todos os sistemas",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Sim para alguns sistemas",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "category": "Access Control",
+        "text": "As contas de funcionários rescindidos são prontamente desativados?",
+        "options": [
+            {
+                "text": "Sim, dentro de 24 horas",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Sim, mas atrasado",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "category": "Access Control",
+        "text": "Os privilégios administrativos estão restritos ao pessoal essencial?",
+        "options": [
+            {
+                "text": "Sim, estritamente aplicado",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Parcialmente",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "category": "Access Control",
+        "text": "As tentativas de login são monitoradas quanto a atividades suspeitas?",
+        "options": [
+            {
+                "text": "Sim, monitoramento em tempo real",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Sim, mas não em tempo real",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "category": "Data Protection",
+        "text": "Os dados sensíveis são criptografados em repouso?",
+        "options": [
+            {
+                "text": "Sim, com criptografia forte",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Sim, mas criptografia fraca",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "category": "Data Protection",
+        "text": "Os dados sensíveis são criptografados em trânsito?",
+        "options": [
+            {
+                "text": "Sim, sempre",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Às vezes",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "category": "Incident Response and Recovery",
+        "text": "Você tem um plano de resposta a incidentes documentado?",
+        "options": [
+            {
+                "text": "Sim, testado regularmente",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas não testado",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "category": "Incident Response and Recovery",
+        "text": "Os backups regulares dos dados críticos são executados?",
+        "options": [
+            {
+                "text": "Sim, com armazenamento externo",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas sem armazenamento externo",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "category": "Employee Awareness and Training",
+        "text": "Você conduz exercícios de simulação de phishing?",
+        "options": [
+            {
+                "text": "Sim, anualmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "category": "Third-Party Risk Management",
+        "text": "Você avalia fornecedores de terceiros para conformidade com a segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, anualmente",
+                "score": 10,
+                "recommendation": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "category": "Third-Party Risk Management",
+        "text": "Você precisa de fornecedores de terceiros para aderir às suas políticas de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, imposto por contratos",
+                "score": 10,
+                "recommendation": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+            },
+            {
+                "text": "Parcialmente",
+                "score": 5,
+                "recommendation": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "category": "Third-Party Risk Management",
+        "text": "Você revisa políticas de segurança cibernética de terceiros anualmente?",
+        "options": [
+            {
+                "text": "Sim, abrangente",
+                "score": 10,
+                "recommendation": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+            },
+            {
+                "text": "Sim, mas superficialmente",
+                "score": 5,
+                "recommendation": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "category": "Incident Response and Recovery",
+        "text": "Você realiza exercícios de treinamento regular de resposta a incidentes?",
+        "options": [
+            {
+                "text": "Sim, anualmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "category": "Data Protection",
+        "text": "Você aplica políticas de senha fortes em toda a organização?",
+        "options": [
+            {
+                "text": "Sim, com atualizações obrigatórias",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Sim, mas as atualizações são opcionais",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "category": "Data Protection",
+        "text": "Você implementa os controles de acesso baseados em funções (RBAC)?",
+        "options": [
+            {
+                "text": "Sim, estritamente aplicado",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Parcialmente implementado",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "category": "Data Protection",
+        "text": "Você restringe o acesso a dados confidenciais com base nas funções dos funcionários?",
+        "options": [
+            {
+                "text": "Sim, imposto rigorosamente",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Parcialmente aplicado",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "category": "Network Security",
+        "text": "Você usa redes privadas virtuais (VPNs) para acesso remoto?",
+        "options": [
+            {
+                "text": "Sim, com o MFA habilitado",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Sim, mas sem MFA",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "category": "Network Security",
+        "text": "Você bloqueia os dispositivos não autorizados de acessar sua rede?",
+        "options": [
+            {
+                "text": "Sim, estritamente aplicado",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Parcialmente aplicado",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "category": "Access Control",
+        "text": "Você mantém um log de todo o acesso do usuário a sistemas críticos?",
+        "options": [
+            {
+                "text": "Sim, com auditorias regulares",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Sim, mas raramente auditado",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "category": "Access Control",
+        "text": "Você tem um processo documentado de integração e offboard para funcionários?",
+        "options": [
+            {
+                "text": "Sim, com medidas de segurança cibernética incluídas",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Sim, mas sem medidas de segurança",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "category": "Employee Awareness and Training",
+        "text": "Você conduz treinamento obrigatório de conscientização sobre segurança cibernética para novas contratações?",
+        "options": [
+            {
+                "text": "Sim, no primeiro mês",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas atrasado",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "category": "Employee Awareness and Training",
+        "text": "Você comunica regularmente atualizações de segurança cibernética aos funcionários?",
+        "options": [
+            {
+                "text": "Sim, mensalmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "category": "Employee Awareness and Training",
+        "text": "Os funcionários relatam tentativas de phishing e e -mails suspeitos?",
+        "options": [
+            {
+                "text": "Sim, com relatórios obrigatórios",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas voluntário",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "category": "Employee Awareness and Training",
+        "text": "Você fornece treinamento sobre práticas de navegação segura?",
+        "options": [
+            {
+                "text": "Sim, regularmente",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas com pouca frequência",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "category": "Incident Response and Recovery",
+        "text": "Você tem ferramentas automatizadas para detectar e responder a incidentes de segurança?",
+        "options": [
+            {
+                "text": "Sim, totalmente automatizado",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, parcialmente automatizado",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "category": "Incident Response and Recovery",
+        "text": "Você mantém um registro de todos os incidentes de segurança e violações?",
+        "options": [
+            {
+                "text": "Sim, com análise detalhada",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas sem análise detalhada",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "category": "Third-Party Risk Management",
+        "text": "Você garante que os fornecedores tenham seguro de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, como parte dos contratos",
+                "score": 10,
+                "recommendation": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+            },
+            {
+                "text": "Não, mas considerado",
+                "score": 5,
+                "recommendation": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "category": "Data Protection",
+        "text": "Você aplica uma política de retenção e exclusão de dados?",
+        "options": [
+            {
+                "text": "Sim, estritamente aplicado",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Sim, mas pouco seguido",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "category": "Governança e Politicas",
+        "text": "Você revisa e atualiza regularmente suas políticas de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, anualmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "category": "Access Control",
+        "text": "Você aplica requisitos de complexidade de senha (por exemplo, comprimento, caracteres especiais)?",
+        "options": [
+            {
+                "text": "Sim, estritamente aplicado",
+                "score": 10,
+                "recommendation": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+            },
+            {
+                "text": "Parcialmente aplicado",
+                "score": 5,
+                "recommendation": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "category": "Data Protection",
+        "text": "Você tem um método seguro para compartilhar informações confidenciais internamente?",
+        "options": [
+            {
+                "text": "Sim, com controles de criptografia e acesso",
+                "score": 10,
+                "recommendation": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+            },
+            {
+                "text": "Parcialmente implementado",
+                "score": 5,
+                "recommendation": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "category": "Network Security",
+        "text": "Você bloqueia o acesso a sites maliciosos usando uma solução de filtragem na web?",
+        "options": [
+            {
+                "text": "Sim, com atualizações em tempo real",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Sim, mas as atualizações são pouco frequentes",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "category": "Employee Awareness and Training",
+        "text": "Você fornece treinamento contínuo para identificar e prevenir ataques de phishing?",
+        "options": [
+            {
+                "text": "Sim, trimestralmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, anualmente",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "category": "Incident Response and Recovery",
+        "text": "Você testa seu processo de restauração de backup regularmente?",
+        "options": [
+            {
+                "text": "Sim, pelo menos anualmente",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas com menos frequência",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "category": "Governança e Politicas",
+        "text": "Você realiza auditorias de terceiros do seu programa de segurança cibernética?",
+        "options": [
+            {
+                "text": "Sim, anualmente ou com mais frequência",
+                "score": 10,
+                "recommendation": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+            },
+            {
+                "text": "Sim, mas com pouca frequência",
+                "score": 5,
+                "recommendation": "Aumente as medidas de governança alinhando-se às melhores práticas do setor."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "category": "Third-Party Risk Management",
+        "text": "Você exige que os fornecedores sigam os regulamentos de proteção de dados (por exemplo, GDPR, HIPAA)?",
+        "options": [
+            {
+                "text": "Sim, com verificações regulares de conformidade",
+                "score": 10,
+                "recommendation": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+            },
+            {
+                "text": "Sim, mas sem verificações de conformidade",
+                "score": 5,
+                "recommendation": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "category": "Employee Awareness and Training",
+        "text": "Você treina funcionários com segurança usando dispositivos móveis e pessoais para o trabalho?",
+        "options": [
+            {
+                "text": "Sim, regularmente",
+                "score": 10,
+                "recommendation": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+            },
+            {
+                "text": "Sim, mas com pouca frequência",
+                "score": 5,
+                "recommendation": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "category": "Network Security",
+        "text": "Você realiza avaliações de segurança nos serviços em nuvem usados ​​por sua organização?",
+        "options": [
+            {
+                "text": "Sim, antes da adoção e periodicamente",
+                "score": 10,
+                "recommendation": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+            },
+            {
+                "text": "Sim, mas apenas uma vez durante a adoção",
+                "score": 5,
+                "recommendation": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "category": "Incident Response and Recovery",
+        "text": "Você usa ferramentas automatizadas de inteligência de ameaças para melhorar sua resposta a incidentes?",
+        "options": [
+            {
+                "text": "Sim, integrado com ferramentas de resposta",
+                "score": 10,
+                "recommendation": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+            },
+            {
+                "text": "Sim, mas não integrado",
+                "score": 5,
+                "recommendation": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+            },
+            {
+                "text": "Não",
+                "score": 0,
+                "recommendation": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+            }
+        ]
+    }
+]
