@@ -25,8 +25,8 @@ project-root/
 ### **Frontend Requirements**
 - Node.js 16+
 - npm 7+ (comes with Node.js)
-- Vue 3.x
-- TailwindCSS 3.x
+- Vue 3
+- TailwindCSS 3
 
 ---
 
