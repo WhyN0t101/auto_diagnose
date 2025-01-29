@@ -3,12 +3,17 @@ from flask_cors import CORS
 import json
 from fpdf import FPDF
 import io
+import os
+
+# Define the path to the font file (Ensure the font file is available)
+FONT_PATH = r"fonts\DejaVuSans.ttf"  # Raw string prevents escape interpretation
+FONT_PATH_BOLD = r"fonts\DejaVuSans-Bold.ttf"
 
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests from the frontend
 
 # Load translated questions
-with open("questions.json", "r", encoding="utf-8") as f:
+with open("questions/questions.json", "r", encoding="utf-8") as f:
     questions_data = json.load(f)
 
 # Function to get questions by language
@@ -91,6 +96,8 @@ def submit_answers():
         "recommendations": recommendations
     })
 
+
+
 @app.route("/api/generate-pdf", methods=["POST"])
 def generate_pdf():
     data = request.json
@@ -105,17 +112,15 @@ def generate_pdf():
     category_max_scores = data["category_max_scores"]
     recommendations = data["recommendations"]
 
-    # Calculate overall score
-    total_score = sum(category_scores.values())
-    max_score = sum(category_max_scores.values())
-    percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
-
-    # Calculate category percentages
+        # Calculate category percentages
     category_percentages = {
         category: (score / category_max_scores[category]) * 100 if category_max_scores[category] > 0 else 0
         for category, score in category_scores.items()
     }
-
+    # Calculate overall score
+    total_score = sum(category_scores.values())
+    max_score = sum(category_max_scores.values())
+    percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
     # Identify categories below 50%
     weak_categories = [category for category, percentage in category_percentages.items() if percentage < 50]
 
@@ -149,35 +154,35 @@ def generate_pdf():
         for category in weak_categories if category in tool_recommendations
     }
 
-    # Select language-specific title
     title = "Cybersecurity Diagnostic Report" if lang == "en" else "Relatório de Diagnóstico de Cibersegurança"
-
-    # Create PDF
+    # ✅ Create PDF
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
 
-    # Use a font that supports extended characters
-    pdf.set_font("Arial", "", 12)
+    # ✅ Ensure font exists before adding it
+    pdf.add_font("DejaVu", "", FONT_PATH, uni=True)  # Normal font
+    pdf.add_font("DejaVu", "B", FONT_PATH_BOLD, uni=True)  # Bold version
+    pdf.set_font("DejaVu", "", 12)  # Use DejaVu font
 
-    # ✅ Add title
-    pdf.set_font("Arial", style="B", size=16)
+
+    pdf.set_font("DejaVu", style="B", size=16)
     pdf.cell(200, 10, txt=title, ln=True, align="C")
     pdf.ln(10)
 
     # ✅ Add Overall Score
-    pdf.set_font("Arial", style="B", size=14)
+    pdf.set_font("DejaVu", style="B", size=14)
     pdf.cell(0, 10, txt="Overall Score:" if lang == "en" else "Pontuação Geral:", ln=True)
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("DejaVu", size=12)
     pdf.cell(0, 10, txt=f"{total_score}/{max_score} ({round(percentage_score, 2)}%)", ln=True)
     pdf.ln(10)
 
     # ✅ Add Category Scores
-    pdf.set_font("Arial", style="B", size=14)
+    pdf.set_font("DejaVu", style="B", size=14)
     pdf.cell(0, 10, txt="Category Breakdown:" if lang == "en" else "Desempenho por Categoria:", ln=True)
     pdf.ln(5)
     
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("DejaVu", size=12)
     for category, score in category_scores.items():
         max_cat_score = category_max_scores.get(category, "N/A")
         pdf.cell(200, 10, txt=f"{category}: {score}/{max_cat_score} ({round(category_percentages[category], 2)}%)", ln=True)
@@ -185,26 +190,26 @@ def generate_pdf():
     pdf.ln(10)
 
     # ✅ Add Recommendations
-    pdf.set_font("Arial", style="B", size=14)
+    pdf.set_font("DejaVu", style="B", size=14)
     pdf.cell(0, 10, txt="Recommendations:" if lang == "en" else "Recomendações:", ln=True)
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("DejaVu", size=12)
     pdf.multi_cell(0, 10, recommendations)
     pdf.ln(10)
 
     # **Only Add Suggested Tools if Any Exist**
     if category_tool_recommendations:
-        pdf.set_font("Arial", style="B", size=14)
+        pdf.set_font("DejaVu", style="B", size=14)
         pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
-        pdf.set_font("Arial", size=12)
+        pdf.set_font("DejaVu", size=12)
         for category, tools in category_tool_recommendations.items():
             pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
         pdf.ln(10)
         
-    pdf.set_font("Arial", style="B", size=14)
+    pdf.set_font("DejaVu", style="B", size=14)
     pdf.cell(0, 10, txt="Answers Summary:" if lang == "en" else "Respostas Escolhidas:", ln=True)
     pdf.ln(5)
 
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("DejaVu", size=12)
     for idx, answer in enumerate(answers):
         pdf.multi_cell(0, 10, f"Q{idx + 1}: {answer}")
         pdf.ln(2)
@@ -217,15 +222,13 @@ def generate_pdf():
     pdf_output.write(pdf_bytes)
     pdf_output.seek(0)
 
+
     return send_file(
         pdf_output,
         mimetype="application/pdf",
         as_attachment=True,
         download_name="cybersecurity_diagnostic_report.pdf" if lang == "en" else "diagnostico_ciberseguranca.pdf",
     )
-
-
-
 if __name__ == "__main__":
     app.run(debug=True)
 

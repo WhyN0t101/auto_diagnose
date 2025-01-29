@@ -16,7 +16,7 @@
         @click="switchLanguage"
         class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg transition-colors"
       >
-        {{ language === "en" ? "🇬🇧 English" : "🇵🇹 Português" }}
+        {{ language === "en" ? "🇵🇹 Português" : "🇬🇧 English" }}
       </button>
     </nav>
 
@@ -94,6 +94,7 @@
         <button
           v-if="currentQuestionIndex === questions.length - 1"
           @click="submitAnswers"
+          
           class="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white transition-colors"
           :disabled="!selectedAnswers[currentQuestionIndex]"
         >
@@ -287,6 +288,8 @@ export default {
     },
 
     async submitAnswers() {
+      console.log("Submit button clicked!"); // 🛠 Debugging Step
+
       try {
         const response = await axios.post(`http://127.0.0.1:5000/api/submit?lang=${this.language}`, {
           answers: Object.values(this.selectedAnswers),
