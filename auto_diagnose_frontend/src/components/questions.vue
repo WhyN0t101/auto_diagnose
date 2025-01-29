@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4 lg:px-6">
     <!-- Navigation -->
-    <nav class="absolute top-6 left-6 w-full max-w-4xl">
+    <nav class="absolute top-6 left-6 w-full max-w-4xl flex items-center gap-4">
       <button
         @click="$router.push('/')"
         class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg transition-colors"
@@ -12,7 +12,14 @@
         </svg>
         Home
       </button>
+      <button
+        @click="switchLanguage"
+        class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg transition-colors"
+      >
+        {{ language === "en" ? "🇬🇧 English" : "🇵🇹 Português" }}
+      </button>
     </nav>
+
 
     <!-- Loading State -->
     <div v-if="loading" class="flex flex-col items-center justify-center space-y-4">
@@ -58,6 +65,7 @@
 
       <!-- Navigation Buttons -->
       <div class="flex justify-between md:justify-end items-center mt-8 space-x-4">
+        <!-- Previous Button -->
         <button
           v-if="currentQuestionIndex > 0"
           @click="prevQuestion"
@@ -66,33 +74,36 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h18" />
           </svg>
-          Previous
+          {{ language === "en" ? "Previous" : "Anterior" }}
         </button>
 
+        <!-- Next Button -->
         <button
           v-if="currentQuestionIndex < questions.length - 1"
           @click="nextQuestion"
           class="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white transition-colors"
           :disabled="!selectedAnswers[currentQuestionIndex]"
         >
-          Next
+          {{ language === "en" ? "Next" : "Próxima" }}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </button>
 
+        <!-- Submit Button -->
         <button
           v-if="currentQuestionIndex === questions.length - 1"
           @click="submitAnswers"
           class="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white transition-colors"
           :disabled="!selectedAnswers[currentQuestionIndex]"
         >
-          Submit
+          {{ language === "en" ? "Submit" : "Enviar" }}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </button>
       </div>
+
     </div>
 
     <!-- Results Section -->
@@ -156,6 +167,7 @@ export default {
   name: "CyberDiagnostic",
   data() {
     return {
+      language: localStorage.getItem("language") || "en", // Load stored language or default to English
       questions: [],
       currentQuestionIndex: 0,
       selectedAnswers: {},
@@ -194,7 +206,7 @@ export default {
     },
     async fetchQuestions() {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/api/questions");
+        const response = await axios.get(`http://127.0.0.1:5000/api/questions?lang=${this.language}`);
         this.questions = response.data;
         this.loading = false;
       } catch (error) {
@@ -238,6 +250,11 @@ export default {
       this.percentageScore = null;
       this.recommendations = "";
       this.categoryScores = {};
+    },
+    switchLanguage() {
+      this.language = this.language === "en" ? "pt" : "en";
+      localStorage.setItem("language", this.language);
+      this.fetchQuestions(); // Reload questions in the selected language
     },
   },
   created() {
