@@ -105,11 +105,12 @@
       </div>
 
     </div>
-
     <!-- Results Section -->
     <div v-else class="text-center max-w-4xl w-full animate-fade-in">
       <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 md:p-8 border border-white/20 shadow-2xl">
-        <h2 class="text-3xl font-bold mb-4 text-blue-200">Diagnostic Results</h2>
+        <h2 class="text-3xl font-bold mb-4 text-blue-200">
+          {{ language === "en" ? "Diagnostic Results" : "Resultados do Diagnóstico" }}
+        </h2>
 
         <!-- Overall Percentage -->
         <div class="text-5xl font-bold text-blue-300 mb-6">
@@ -117,20 +118,23 @@
         </div>
 
         <!-- Category Breakdown -->
-        <h3 class="text-2xl font-semibold mb-4 text-blue-100">Category Breakdown</h3>
+        <h3 class="text-2xl font-semibold mb-4 text-blue-100">
+          {{ language === "en" ? "Category Breakdown" : "Desempenho por Categoria" }}
+        </h3>
         <ul class="text-left text-lg text-gray-100 space-y-2">
           <li
-            v-for="(categoryScore, category) in categoryScores"
+            v-for="(categoryScore, category) in translatedCategoryScores"
             :key="category"
             class="flex justify-between"
           >
             <span>{{ category }}</span>
-            <span>{{ categoryScore }}/{{ categoryMaxScores[category] }}</span>
+            <span>{{ categoryScore }}/{{ translatedCategoryMaxScores[category] }}</span>
           </li>
         </ul>
 
-        <!-- Recommendations -->
-        <p class="text-lg mt-6 text-gray-100">{{ recommendations }}</p>
+        <p class="text-lg mt-6 text-gray-100">
+          {{ translatedRecommendations }}
+        </p>
 
         <!-- Buttons (Side by Side) -->
         <div class="flex flex-col md:flex-row justify-center gap-4 mt-6">
@@ -141,7 +145,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
-            Restart Diagnostic
+            {{ language === "en" ? "Restart Diagnostic" : "Reiniciar Diagnóstico" }}
           </button>
 
           <button
@@ -151,7 +155,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
-            Download PDF
+            {{ language === "en" ? "Download PDF" : "Baixar PDF" }}
           </button>
         </div>
       </div>
@@ -176,34 +180,82 @@ export default {
       recommendations: "",
       categoryScores: {},
       categoryMaxScores: {},
+      translatedRecommendations: "",
+
+      // Translations for category names
+      categoryTranslations: {
+        "Access Control": "Controlo de Acessos",
+        "Data Protection": "Proteção de Dados",
+        "Employee Awareness and Training": "Consciencialização e Formação dos Funcionários",
+        "Governance and Policies": "Governança e Políticas",
+        "Incident Response and Recovery": "Resposta a Incidentes e Recuperação",
+        "Network Security": "Segurança de Rede",
+        "Third-Party Risk Management": "Gestão de Riscos de Terceiros",
+      },
+
+      // Translations for recommendations
+      recommendationTranslations: {
+        "Focus on strengthening key areas": "Foque-se em fortalecer as seguintes áreas",
+        "Good job! No major weaknesses detected.": "Bom trabalho! Nenhuma fraqueza detectada."
+      }
     };
   },
+
+  computed: {
+    // Traduz categorias dinamicamente
+    translatedCategoryScores() {
+      return Object.keys(this.categoryScores).reduce((acc, category) => {
+        const translatedCategory = this.language === "pt" ? this.categoryTranslations[category] || category : category;
+        acc[translatedCategory] = this.categoryScores[category]; // Mantém a pontuação correta
+        return acc;
+      }, {});
+    },
+
+    translatedCategoryMaxScores() {
+      return Object.keys(this.categoryMaxScores).reduce((acc, category) => {
+        const translatedCategory = this.language === "pt" ? this.categoryTranslations[category] || category : category;
+        acc[translatedCategory] = this.categoryMaxScores[category]; // Mantém o valor máximo correto
+        return acc;
+      }, {});
+    },
+
+    // Traduz recomendações se necessário
+    translatedRecommendationsText() {
+      if (!this.recommendations) return "";
+      return this.language === "pt"
+        ? this.translateRecommendations(this.recommendations)
+        : this.recommendations;
+    }
+  },
+
+
   methods: {
     async generatePDF() {
       try {
-          const payload = {
-              answers: Object.values(this.selectedAnswers), // Convert answers to array
-              category_scores: this.categoryScores, // Scores per category
-              category_max_scores: this.categoryMaxScores, // Max scores per category
-              recommendations: this.recommendations, // Recommendations
-          };
+        const payload = {
+          answers: Object.values(this.selectedAnswers),
+          category_scores: this.categoryScores,
+          category_max_scores: this.categoryMaxScores,
+          recommendations: this.recommendations
+        };
 
-          const response = await axios.post(
-              "http://127.0.0.1:5000/api/generate-pdf",
-              payload,
-              { responseType: "blob" } // Ensures response is treated as a file
-          );
+        const response = await axios.post(
+          `http://127.0.0.1:5000/api/generate-pdf?lang=${this.language}`,
+          payload,
+          { responseType: "blob" }
+        );
 
-          // Create a downloadable link for the PDF
-          const blob = new Blob([response.data], { type: "application/pdf" });
-          const link = document.createElement("a");
-          link.href = window.URL.createObjectURL(blob);
-          link.download = "diagnostic_report.pdf";
-          link.click();
+        // Create a downloadable link for the PDF
+        const blob = new Blob([response.data], { type: "application/pdf" });
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = this.language === "en" ? "diagnostic_report.pdf" : "diagnostico_ciberseguranca.pdf";
+        link.click();
       } catch (error) {
-          console.error("Error generating PDF:", error.response?.data || error.message);
+        console.error("Error generating PDF:", error.response?.data || error.message);
       }
     },
+
     async fetchQuestions() {
       try {
         const response = await axios.get(`http://127.0.0.1:5000/api/questions?lang=${this.language}`);
@@ -214,14 +266,17 @@ export default {
         this.loading = false;
       }
     },
+
     selectAnswer(answer) {
       this.selectedAnswers[this.currentQuestionIndex] = answer;
     },
+
     prevQuestion() {
       if (this.currentQuestionIndex > 0) {
         this.currentQuestionIndex--;
       }
     },
+
     nextQuestion() {
       if (
         this.currentQuestionIndex < this.questions.length - 1 &&
@@ -230,20 +285,38 @@ export default {
         this.currentQuestionIndex++;
       }
     },
+
     async submitAnswers() {
       try {
-        const response = await axios.post("http://127.0.0.1:5000/api/submit", {
+        const response = await axios.post(`http://127.0.0.1:5000/api/submit?lang=${this.language}`, {
           answers: Object.values(this.selectedAnswers),
         });
+
+        console.log("API Response:", response.data); // Debugging the response
+
         this.percentageScore = response.data.percentage_score || 0;
-        this.categoryScores = response.data.category_scores;
-        this.categoryMaxScores = response.data.category_max_scores;
-        this.recommendations = response.data.recommendations;
+        this.categoryScores = response.data.category_scores || {};
+        this.categoryMaxScores = response.data.category_max_scores || {};
+        this.recommendations = response.data.recommendations || "";
+
+        // Ensure translations for recommendations if in Portuguese
+        this.translatedRecommendations = this.language === "pt"
+          ? this.translateRecommendations(this.recommendations)
+          : this.recommendations;
+
         this.currentQuestionIndex++;
       } catch (error) {
         console.error("Error submitting answers:", error);
       }
     },
+
+    translateRecommendations(text) {
+      for (const key in this.recommendationTranslations) {
+        text = text.replace(key, this.recommendationTranslations[key]);
+      }
+      return text;
+    },
+
     restart() {
       this.currentQuestionIndex = 0;
       this.selectedAnswers = {};
@@ -251,17 +324,20 @@ export default {
       this.recommendations = "";
       this.categoryScores = {};
     },
+
     switchLanguage() {
       this.language = this.language === "en" ? "pt" : "en";
       localStorage.setItem("language", this.language);
-      this.fetchQuestions(); // Reload questions in the selected language
-    },
+      this.fetchQuestions();
+    }
   },
+
   created() {
     this.fetchQuestions();
-  },
+  }
 };
 </script>
+
 
 <style scoped>
 @keyframes fade-in {
