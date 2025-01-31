@@ -5,9 +5,14 @@ from fpdf import FPDF
 import io
 import os
 
-# Define the path to the font file (Ensure the font file is available)
-FONT_PATH = r"fonts\DejaVuSans.ttf"  # Raw string prevents escape interpretation
-FONT_PATH_BOLD = r"fonts\DejaVuSans-Bold.ttf"
+# Obtém o diretório base do script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FONT_DIR = os.path.join(BASE_DIR, "fonts")
+
+# Caminhos completos das fontes
+FONT_PATH = os.path.join(FONT_DIR, "DejaVuSans.ttf")
+FONT_PATH_BOLD = os.path.join(FONT_DIR, "DejaVuSans-Bold.ttf")
+
 
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests from the frontend
@@ -160,9 +165,13 @@ def generate_pdf():
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
 
-    # ✅ Ensure font exists before adding it
-    pdf.add_font("DejaVu", "", FONT_PATH, uni=True)  # Normal font
-    pdf.add_font("DejaVu", "B", FONT_PATH_BOLD, uni=True)  # Bold version
+    try:
+        pdf.add_font("DejaVu", "", os.path.abspath(FONT_PATH), uni=True)
+        pdf.add_font("DejaVu", "B", os.path.abspath(FONT_PATH_BOLD), uni=True)
+        print("✅ Fontes carregadas corretamente no FPDF.")
+    except Exception as e:
+        print(f"🚨 Erro ao carregar fontes no FPDF: {e}")
+        raise
     pdf.set_font("DejaVu", "", 12)  # Use DejaVu font
 
 
