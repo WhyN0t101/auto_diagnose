@@ -134,7 +134,7 @@
         </ul>
 
         <p class="text-lg mt-6 text-gray-100">
-          {{ translatedRecommendations }}
+          {{ translatedRecommendationsText  }}
         </p>
 
         <!-- Buttons (Side by Side) -->
@@ -312,13 +312,28 @@ export default {
         console.error("Error submitting answers:", error);
       }
     },
-
     translateRecommendations(text) {
-      for (const key in this.recommendationTranslations) {
-        text = text.replace(key, this.recommendationTranslations[key]);
+      if (!text) return "";
+
+      let translatedText = text;
+
+      // Primeiro, traduzimos frases fixas das recomendações
+      for (const [enPhrase, ptPhrase] of Object.entries(this.recommendationTranslations)) {
+        const regex = new RegExp(enPhrase, "gi");
+        translatedText = translatedText.replace(regex, ptPhrase);
       }
-      return text;
+
+      // Depois, traduzimos os nomes das categorias dentro do texto traduzido
+      for (const [enCategory, ptCategory] of Object.entries(this.categoryTranslations)) {
+        const regex = new RegExp(`\\b${enCategory}\\b`, "gi"); // Usa \b para garantir que apenas palavras inteiras sejam substituídas
+        translatedText = translatedText.replace(regex, ptCategory);
+      }
+
+      console.log("Translated recommendations:", translatedText); // Debugging para verificar se a tradução ocorreu corretamente
+
+      return translatedText;
     },
+    
 
     restart() {
       this.currentQuestionIndex = 0;
