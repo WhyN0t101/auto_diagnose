@@ -1,2300 +1,2300 @@
 [
     {
-        "id": 1,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
+        "id":1,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e Políticas"
         },
-        "text": {
-            "en": "Do you have a written and approved cybersecurity policy?",
-            "pt": "Você tem uma política de segurança cibernética escrita e aprovada?"
+        "text":{
+            "en":"Do you have a written and approved cybersecurity policy?",
+            "pt":"Tem uma política de cibersegurança  escrita e aprovada?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure the policy is regularly updated and aligned with evolving cybersecurity threats.",
+                    "pt":"Garanta que a política seja atualizada regularmente e alinhada com as ameaças de cibersegurança em evolução."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a formal cybersecurity policy, ensuring clear roles and responsibilities.",
+                    "pt":"Desenvolva uma política formal de cibersegurança, garantindo funções e responsabilidades claras."
                 }
             },
             {
-                "text": {
-                    "en": "In Progress",
-                    "pt": "Em andamento"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
-                }
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
-        },
-        "text": {
-            "en": "Are cybersecurity roles and responsibilities clearly defined within your organization?",
-            "pt": "As funções e responsabilidades de segurança cibernética são claramente definidas em sua organização?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, documented and assigned",
-                    "pt": "Sim, documentado e designado"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but informal",
-                    "pt": "Sim, mas informal"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":5,
+                "recommendation":{
+                    "en":"Complete the development of your cybersecurity policy and seek expert validation.",
+                    "pt":"Finalize o desenvolvimento da sua política de cibersegurança e procure validação especializada."
                 }
             }
         ]
     },
     {
-        "id": 3,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
+        "id":2,
+        "category":{
+            "en":"Risk Management",
+            "pt":"Gestão de Riscos"
         },
-        "text": {
-            "en": "Do you perform annual cybersecurity risk assessments?",
-            "pt": "Você realiza avaliações anuais de risco de segurança cibernética?"
+        "text":{
+            "en":"Has your organization conducted a formal risk assessment in the past year?",
+            "pt":"A sua organização realizou uma avaliação formal de riscos no último ano?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue conducting risk assessments regularly and refine mitigation strategies.",
+                    "pt":"Continue a realizar avaliações de risco regularmente e refine as estratégias de mitigação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":0,
+                "recommendation":{
+                    "en":"Initiate a formal risk assessment to identify potential cybersecurity threats.",
+                    "pt":"Inicie uma avaliação formal de riscos para identificar ameaças de cibersegurança."
                 }
             },
             {
-                "text": {
-                    "en": "Occasionally",
-                    "pt": "Ocasionalmente"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
-                }
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
-        },
-        "text": {
-            "en": "Do you have a cybersecurity awareness program in place for employees?",
-            "pt": "Você tem um programa de conscientização sobre segurança cibernética para funcionários?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, ongoing and mandatory",
-                    "pt": "Sim, em andamento e obrigatório"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but infrequent",
-                    "pt": "Sim, mas pouco frequente"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":5,
+                "recommendation":{
+                    "en":"Ensure the ongoing risk assessment covers all critical business areas.",
+                    "pt":"Garanta que a avaliação de riscos em curso abranja todas as áreas críticas do negócio."
                 }
             }
         ]
     },
     {
-        "id": 5,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
+        "id":3,
+        "category":{
+            "en":"Asset Management",
+            "pt":"Gestão de Ativos"
         },
-        "text": {
-            "en": "Do you allocate a specific budget for cybersecurity initiatives?",
-            "pt": "Você aloca um orçamento específico para iniciativas de segurança cibernética?"
+        "text":{
+            "en":"Are all company assets inventoried and categorized?",
+            "pt":"Todos os ativos da empresa estão inventariados e categorizados?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, sufficient budget",
-                    "pt": "Sim, orçamento suficiente"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain adherence to best practices and continuously improve security controls.",
+                    "pt":"Mantenha a adesão às melhores práticas e melhore continuamente os controlos de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but limited budget",
-                    "pt": "Sim, mas orçamento limitado"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement the necessary security measures to mitigate potential vulnerabilities.",
+                    "pt":"Implemente as medidas de segurança necessárias para mitigar vulnerabilidades potenciais."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
-                }
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
-        },
-        "text": {
-            "en": "Do you have a firewall installed and configured on your network?",
-            "pt": "Você tem um firewall instalado e configurado em sua rede?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
-                }
-            },
-            {
-                "text": {
-                    "en": "Not Sure",
-                    "pt": "Não tenho certeza"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":5,
+                "recommendation":{
+                    "en":"Finalize the implementation of security measures and conduct validation tests.",
+                    "pt":"Finalize a implementação das medidas de segurança e realize testes de validação."
                 }
             }
         ]
     },
     {
-        "id": 7,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":4,
+        "category":{
+            "en":"Access Control",
+            "pt":"controlos de Acesso"
         },
-        "text": {
-            "en": "Do you use intrusion detection and prevention systems (IDS/IPS)?",
-            "pt": "Você usa sistemas de detecção e prevenção de intrusões (IDS/IPS)?"
+        "text":{
+            "en":"Is multi-factor authentication (MFA) required for accessing critical systems?",
+            "pt":"A autenticação multifator (MFA) é obrigatória para acessar sistemas críticos?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain adherence to best practices and continuously improve security controls.",
+                    "pt":"Mantenha a adesão às melhores práticas e melhore continuamente os controlos de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement the necessary security measures to mitigate potential vulnerabilities.",
+                    "pt":"Implemente as medidas de segurança necessárias para mitigar vulnerabilidades potenciais."
                 }
             },
             {
-                "text": {
-                    "en": "Not Sure",
-                    "pt": "Não tenho certeza"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
-                }
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
-        },
-        "text": {
-            "en": "Do you monitor network traffic for suspicious activities?",
-            "pt": "Você monitora o tráfego de rede em busca de atividades suspeitas?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, continuously",
-                    "pt": "Sim, continuamente"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but not continuous",
-                    "pt": "Sim, mas não contínuo"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":5,
+                "recommendation":{
+                    "en":"Finalize the implementation of security measures and conduct validation tests.",
+                    "pt":"Finalize a implementação das medidas de segurança e realize testes de validação."
                 }
             }
         ]
     },
     {
-        "id": 9,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":5,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de Rede"
         },
-        "text": {
-            "en": "Do you perform regular vulnerability scans on your systems?",
-            "pt": "Você realiza varreduras regulares de vulnerabilidade em seus sistemas?"
+        "text":{
+            "en":"Do you have a documented incident response plan?",
+            "pt":"Você tem um plano documentado de resposta a incidentes?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, monthly or more frequently",
-                    "pt": "Sim, mensalmente ou com mais frequência"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Periodically update and test the incident response plan to address emerging threats.",
+                    "pt":"Atualize e teste periodicamente o plano de resposta a incidentes para lidar com ameaças emergentes."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a formal incident response plan with clear roles and escalation procedures.",
+                    "pt":"Desenvolva um plano formal de resposta a incidentes com funções claras e procedimentos de escalonamento."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
-                }
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
-        },
-        "text": {
-            "en": "Do you segment your network to isolate sensitive data?",
-            "pt": "Você segenta sua rede para isolar dados confidenciais?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Partially",
-                    "pt": "Parcialmente"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":5,
+                "recommendation":{
+                    "en":"Complete the incident response plan and train staff on incident handling.",
+                    "pt":"Conclua o plano de resposta a incidentes e treine a equipa no manuseamento de incidentes."
                 }
             }
         ]
     },
     {
-        "id": 11,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":6,
+        "category":{
+            "en":"Incident Response",
+            "pt":"Resposta a Incidentes"
         },
-        "text": {
-            "en": "Do all employees have unique login credentials?",
-            "pt": "Todos os funcionários têm credenciais exclusivas de login?"
+        "text":{
+            "en":"Has your organization conducted a business impact analysis?",
+            "pt":"A sua organização realizou uma análise de impacto nos negócios?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes",
-                    "pt": "Sim"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain adherence to best practices and continuously improve security controls.",
+                    "pt":"Mantenha a adesão às melhores práticas e melhore continuamente os controlos de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "No, shared accounts are used",
-                    "pt": "Não, contas compartilhadas são usadas"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement the necessary security measures to mitigate potential vulnerabilities.",
+                    "pt":"Implemente as medidas de segurança necessárias para mitigar vulnerabilidades potenciais."
                 }
             },
             {
-                "text": {
-                    "en": "Not Sure",
-                    "pt": "Não tenho certeza"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
-                }
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
-        },
-        "text": {
-            "en": "Is multi-factor authentication (MFA) enabled for all critical systems?",
-            "pt": "A autenticação multifatorial (MFA) é ativada para todos os sistemas críticos?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, for all systems",
-                    "pt": "Sim para todos os sistemas"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, for some systems",
-                    "pt": "Sim para alguns sistemas"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":5,
+                "recommendation":{
+                    "en":"Finalize the implementation of security measures and conduct validation tests.",
+                    "pt":"Finalize a implementação das medidas de segurança e realize testes de validação."
                 }
             }
         ]
     },
     {
-        "id": 13,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":7,
+        "category":{
+            "en":"Business Continuity",
+            "pt":"Continuidade dos Negócios"
         },
-        "text": {
-            "en": "Are accounts of terminated employees promptly deactivated?",
-            "pt": "As contas de funcionários rescindidos são prontamente desativados?"
+        "text":{
+            "en":"Do employees receive regular cybersecurity awareness training?",
+            "pt":"Os funcionários recebem treino regular em conscientização sobre cibersegurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, within 24 hours",
-                    "pt": "Sim, dentro de 24 horas"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue with regular cybersecurity training and introduce phishing simulations.",
+                    "pt":"Continue com as formações regulares de cibersegurança e introduza simulações de phishing."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but delayed",
-                    "pt": "Sim, mas atrasado"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement a mandatory security awareness program for all employees.",
+                    "pt": "Implemente um programa obrigatório de conscientização sobre segurança para todos os funcionários."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
-                }
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
-        },
-        "text": {
-            "en": "Are administrative privileges restricted to essential personnel?",
-            "pt": "Os privilégios administrativos estão restritos ao pessoal essencial?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, strictly enforced",
-                    "pt": "Sim, estritamente aplicado"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Partially",
-                    "pt": "Parcialmente"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":5,
+                "recommendation":{
+                    "en":"Ensure all employees complete the cybersecurity training as scheduled.",
+                    "pt":"Garanta que todos os funcionários concluam a formação em cibersegurança conforme planeado."
                 }
             }
         ]
     },
     {
-        "id": 15,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":8,
+        "category":{
+            "en":"Security Awareness",
+            "pt":"Conscientização em Segurança"
         },
-        "text": {
-            "en": "Are login attempts monitored for suspicious activity?",
-            "pt": "As tentativas de login são monitoradas quanto a atividades suspeitas?"
+        "text":{
+            "en":"Are backups performed regularly and tested for integrity?",
+            "pt":"Os backups são realizados regularmente e testados quanto à integridade?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, real-time monitoring",
-                    "pt": "Sim, monitoramento em tempo real"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly test backup integrity and ensure secure offsite storage.",
+                    "pt":"Teste regularmente a integridade dos backups e garanta o armazenamento seguro fora do local."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but not real-time",
-                    "pt": "Sim, mas não em tempo real"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement a robust backup strategy to prevent data loss in case of incidents.",
+                    "pt":"Implemente uma estratégia robusta de backup para evitar perda de dados em caso de incidentes."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
-                }
-            }
-        ]
-    },
-    {
-        "id": 16,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
-        },
-        "text": {
-            "en": "Is sensitive data encrypted at rest?",
-            "pt": "Os dados sensíveis são criptografados em repouso?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, with strong encryption",
-                    "pt": "Sim, com criptografia forte"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but weak encryption",
-                    "pt": "Sim, mas criptografia fraca"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":5,
+                "recommendation":{
+                    "en":"Finalize the backup process and verify its effectiveness in a simulated scenario.",
+                    "pt":"Conclua o processo de backup e verifique a sua eficácia num cenário simulado."
                 }
             }
         ]
     },
     {
-        "id": 17,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":9,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de Dados"
         },
-        "text": {
-            "en": "Is sensitive data encrypted in transit?",
-            "pt": "Os dados sensíveis são criptografados em trânsito?"
+        "text":{
+            "en":"Do you comply with GDPR, ISO 27001, or other relevant data protection regulations?",
+            "pt":"Você está em conformidade com o GDPR, ISO 27001 ou outros regulamentos de proteção de dados?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, always",
-                    "pt": "Sim, sempre"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain adherence to best practices and continuously improve security controls.",
+                    "pt":"Mantenha a adesão às melhores práticas e melhore continuamente os controlos de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Sometimes",
-                    "pt": "Às vezes"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement the necessary security measures to mitigate potential vulnerabilities.",
+                    "pt":"Implemente as medidas de segurança necessárias para mitigar vulnerabilidades potenciais."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
-                }
-            }
-        ]
-    },
-    {
-        "id": 18,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
-        },
-        "text": {
-            "en": "Do you have a documented incident response plan?",
-            "pt": "Você tem um plano de resposta a incidentes documentado?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, tested regularly",
-                    "pt": "Sim, testado regularmente"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but not tested",
-                    "pt": "Sim, mas não testado"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":5,
+                "recommendation":{
+                    "en":"Finalize the implementation of security measures and conduct validation tests.",
+                    "pt":"Finalize a implementação das medidas de segurança e realize testes de validação."
                 }
             }
         ]
     },
     {
-        "id": 19,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":10,
+        "category":{
+            "en":"Compliance",
+            "pt":"Conformidade"
         },
-        "text": {
-            "en": "Are regular backups of critical data performed?",
-            "pt": "Os backups regulares dos dados críticos são executados?"
+        "text":{
+            "en":"Do you have an access control policy defining user roles and privileges?",
+            "pt":"Tem uma política de controlo de acesso que define funções e privilégios dos utilizadors?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with offsite storage",
-                    "pt": "Sim, com armazenamento externo"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure the policy is regularly updated and aligned with evolving cybersecurity threats.",
+                    "pt":"Garanta que a política seja atualizada regularmente e alinhada com as ameaças de cibersegurança em evolução."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but no offsite storage",
-                    "pt": "Sim, mas sem armazenamento externo"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a formal cybersecurity policy, ensuring clear roles and responsibilities.",
+                    "pt":"Desenvolva uma política formal de cibersegurança, garantindo funções e responsabilidades claras."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"In Progress",
+                    "pt":"Em progresso"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
-                }
-            }
-        ]
-    },
-    {
-        "id": 20,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
-        },
-        "text": {
-            "en": "Do you conduct phishing simulation exercises?",
-            "pt": "Você conduz exercícios de simulação de phishing?"
-        },
-        "options": [
-            {
-                "text": {
-                    "en": "Yes, annually or more frequently",
-                    "pt": "Sim, anualmente ou com mais frequência"
-                },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
-                }
-            },
-            {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
-                },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
-                }
-            },
-            {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
-                },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":5,
+                "recommendation":{
+                    "en":"Complete the development of your cybersecurity policy and seek expert validation.",
+                    "pt":"Finalize o desenvolvimento da sua política de cibersegurança e procure validação especializada."
                 }
             }
         ]
     },
     {
-        "id": 21,
-        "category": {
-            "en": "Third-Party Risk Management",
-            "pt": "Gerenciamento de riscos de terceiros"
+        "id":30,
+        "category":{
+            "en":"Access Control",
+            "pt":"Controlos de acesso"
         },
-        "text": {
-            "en": "Do you assess third-party vendors for cybersecurity compliance?",
-            "pt": "Você avalia fornecedores de terceiros para conformidade com a segurança cibernética?"
+        "text":{
+            "en":"Do you maintain a log of all user access to critical systems?",
+            "pt":"Mantém um log de todo o acesso do utilizador a sistemas críticos?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, annually",
-                    "pt": "Sim, anualmente"
+                "text":{
+                    "en":"Yes, with regular audits",
+                    "pt":"Sim, com auditorias regulares"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain regular audits of third-party vendors and enforce compliance requirements.",
-                    "pt": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"Yes, but rarely audited",
+                    "pt":"Sim, mas raramente auditado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen vendor security assessments and require compliance documentation.",
-                    "pt": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement a vendor risk management program to evaluate third-party security.",
-                    "pt": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             }
         ]
     },
     {
-        "id": 22,
-        "category": {
-            "en": "Third-Party Risk Management",
-            "pt": "Gerenciamento de riscos de terceiros"
+        "id":43,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you require third-party vendors to adhere to your cybersecurity policies?",
-            "pt": "Você precisa de fornecedores de terceiros para aderir às suas políticas de segurança cibernética?"
+        "text":{
+            "en":"Do you block access to malicious websites using a web filtering solution?",
+            "pt":"Você bloqueia o acesso a sites maliciosos usando uma solução de filtragem na web?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, enforced through contracts",
-                    "pt": "Sim, imposto por contratos"
+                "text":{
+                    "en":"Yes, with real-time updates",
+                    "pt":"Sim, com atualizações em tempo real"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain regular audits of third-party vendors and enforce compliance requirements.",
-                    "pt": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Partially",
-                    "pt": "Parcialmente"
+                "text":{
+                    "en":"Yes, but updates are infrequent",
+                    "pt":"Sim, mas as atualizações são pouco frequentes"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen vendor security assessments and require compliance documentation.",
-                    "pt": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement a vendor risk management program to evaluate third-party security.",
-                    "pt": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 23,
-        "category": {
-            "en": "Third-Party Risk Management",
-            "pt": "Gerenciamento de riscos de terceiros"
+        "id":29,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you review third-party cybersecurity policies annually?",
-            "pt": "Você revisa políticas de segurança cibernética de terceiros anualmente?"
+        "text":{
+            "en":"Do you block unauthorized devices from accessing your network?",
+            "pt":"Você bloqueia os dispositivos não autorizados de acessar a sua rede?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, comprehensively",
-                    "pt": "Sim, abrangente"
+                "text":{
+                    "en":"Yes, strictly enforced",
+                    "pt":"Sim, estritamente aplicado"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain regular audits of third-party vendors and enforce compliance requirements.",
-                    "pt": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but superficially",
-                    "pt": "Sim, mas superficialmente"
+                "text":{
+                    "en":"Partially enforced",
+                    "pt":"Parcialmente aplicado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen vendor security assessments and require compliance documentation.",
-                    "pt": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement a vendor risk management program to evaluate third-party security.",
-                    "pt": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 24,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":46,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
         },
-        "text": {
-            "en": "Do you conduct regular incident response training exercises?",
-            "pt": "Você realiza exercícios de treinamento regular de resposta a incidentes?"
+        "text":{
+            "en":"Do you conduct third-party audits of your cybersecurity program?",
+            "pt":"Você realiza auditorias de terceiros do seu programa de cibersegurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, annually or more frequently",
-                    "pt": "Sim, anualmente ou com mais frequência"
+                "text":{
+                    "en":"Yes, annually or more frequently",
+                    "pt":"Sim, anualmente ou com mais frequência"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"Yes, but infrequently",
+                    "pt":"Sim, mas com pouca frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
                 }
             }
         ]
     },
     {
-        "id": 25,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":27,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
         },
-        "text": {
-            "en": "Do you enforce strong password policies across the organization?",
-            "pt": "Você aplica políticas de senha fortes em toda a organização?"
+        "text":{
+            "en":"Do you restrict access to sensitive data based on employee roles?",
+            "pt":"Você restringe o acesso a dados confidenciais com base nas funções dos funcionários?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with mandatory updates",
-                    "pt": "Sim, com atualizações obrigatórias"
+                "text":{
+                    "en":"Yes, enforced rigorously",
+                    "pt":"Sim, imposto rigorosamente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but updates are optional",
-                    "pt": "Sim, mas as atualizações são opcionais"
+                "text":{
+                    "en":"Partially enforced",
+                    "pt":"Parcialmente aplicado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
                 }
             }
         ]
     },
     {
-        "id": 26,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":40,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
         },
-        "text": {
-            "en": "Do you implement role-based access controls (RBAC)?",
-            "pt": "Você implementa os controles de acesso baseados em funções (RBAC)?"
+        "text":{
+            "en":"Do you regularly review and update your cybersecurity policies?",
+            "pt":"Você revisa e atualiza regularmente as suas políticas de cibersegurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, strictly enforced",
-                    "pt": "Sim, estritamente aplicado"
+                "text":{
+                    "en":"Yes, annually or more frequently",
+                    "pt":"Sim, anualmente ou com mais frequência"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
                 }
             },
             {
-                "text": {
-                    "en": "Partially implemented",
-                    "pt": "Parcialmente implementado"
+                "text":{
+                    "en":"Yes, but less frequently",
+                    "pt":"Sim, mas com menos frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
                 }
             }
         ]
     },
     {
-        "id": 27,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":14,
+        "category":{
+            "en":"Access Control",
+            "pt":"controlos de acesso"
         },
-        "text": {
-            "en": "Do you restrict access to sensitive data based on employee roles?",
-            "pt": "Você restringe o acesso a dados confidenciais com base nas funções dos funcionários?"
+        "text":{
+            "en":"Are administrative privileges restricted to essential personnel?",
+            "pt":"Os privilégios administrativos estão restritos ao pessoal essencial?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, enforced rigorously",
-                    "pt": "Sim, imposto rigorosamente"
+                "text":{
+                    "en":"Yes, strictly enforced",
+                    "pt":"Sim, estritamente aplicado"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Partially enforced",
-                    "pt": "Parcialmente aplicado"
+                "text":{
+                    "en":"Partially",
+                    "pt":"Parcialmente"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             }
         ]
     },
     {
-        "id": 28,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":22,
+        "category":{
+            "en":"Third-Party Risk Management",
+            "pt":"Gerenciamento de riscos de terceiros"
         },
-        "text": {
-            "en": "Do you use Virtual Private Networks (VPNs) for remote access?",
-            "pt": "Você usa redes privadas virtuais (VPNs) para acesso remoto?"
+        "text":{
+            "en":"Do you require third-party vendors to adhere to your cybersecurity policies?",
+            "pt":"Você precisa de fornecedores de terceiros para aderir às suas políticas de cibersegurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with MFA enabled",
-                    "pt": "Sim, com o MFA habilitado"
+                "text":{
+                    "en":"Yes, enforced through contracts",
+                    "pt":"Sim, imposto por contratos"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain regular audits of third-party vendors and enforce compliance requirements.",
+                    "pt":"Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but without MFA",
-                    "pt": "Sim, mas sem MFA"
+                "text":{
+                    "en":"Partially",
+                    "pt":"Parcialmente"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen vendor security assessments and require compliance documentation.",
+                    "pt":"Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement a vendor risk management program to evaluate third-party security.",
+                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
                 }
             }
         ]
     },
     {
-        "id": 29,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":6,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you block unauthorized devices from accessing your network?",
-            "pt": "Você bloqueia os dispositivos não autorizados de acessar sua rede?"
+        "text":{
+            "en":"Do you have a firewall installed and configured on your network?",
+            "pt":"Você tem uma firewall instalada e configurado na sua rede?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, strictly enforced",
-                    "pt": "Sim, estritamente aplicado"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Partially enforced",
-                    "pt": "Parcialmente aplicado"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"Not Sure",
+                    "pt":"Não tenho certeza"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             }
         ]
     },
     {
-        "id": 30,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":28,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you maintain a log of all user access to critical systems?",
-            "pt": "Você mantém um log de todo o acesso do usuário a sistemas críticos?"
+        "text":{
+            "en":"Do you use Virtual Private Networks (VPNs) for remote access?",
+            "pt":"Você usa redes privadas virtuais (VPNs) para acesso remoto?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with regular audits",
-                    "pt": "Sim, com auditorias regulares"
+                "text":{
+                    "en":"Yes, with MFA enabled",
+                    "pt":"Sim, com o MFA habilitado"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but rarely audited",
-                    "pt": "Sim, mas raramente auditado"
+                "text":{
+                    "en":"Yes, but without MFA",
+                    "pt":"Sim, mas sem MFA"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 31,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":10,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you have a documented onboarding and offboarding process for employees?",
-            "pt": "Você tem um processo documentado de integração e offboard para funcionários?"
+        "text":{
+            "en":"Do you segment your network to isolate sensitive data?",
+            "pt":"Você segenta a sua rede para isolar dados confidenciais?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with cybersecurity measures included",
-                    "pt": "Sim, com medidas de segurança cibernética incluídas"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but without security measures",
-                    "pt": "Sim, mas sem medidas de segurança"
+                "text":{
+                    "en":"Partially",
+                    "pt":"Parcialmente"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 32,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":5,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
         },
-        "text": {
-            "en": "Do you conduct mandatory cybersecurity awareness training for new hires?",
-            "pt": "Você conduz treinamento obrigatório de conscientização sobre segurança cibernética para novas contratações?"
+        "text":{
+            "en":"Do you allocate a specific budget for cybersecurity initiatives?",
+            "pt":"Você aloca um orçamento específico para iniciativas de cibersegurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, within the first month",
-                    "pt": "Sim, no primeiro mês"
+                "text":{
+                    "en":"Yes, sufficient budget",
+                    "pt":"Sim, orçamento suficiente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but delayed",
-                    "pt": "Sim, mas atrasado"
+                "text":{
+                    "en":"Yes, but limited budget",
+                    "pt":"Sim, mas orçamento limitado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
                 }
             }
         ]
     },
     {
-        "id": 33,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":8,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you regularly communicate cybersecurity updates to employees?",
-            "pt": "Você comunica regularmente atualizações de segurança cibernética aos funcionários?"
+        "text":{
+            "en":"Do you monitor network traffic for suspicious activities?",
+            "pt":"Você monitora o tráfego de rede em busca de atividades suspeitas?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, monthly or more frequently",
-                    "pt": "Sim, mensalmente ou com mais frequência"
+                "text":{
+                    "en":"Yes, continuously",
+                    "pt":"Sim, continuamente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"Yes, but not continuous",
+                    "pt":"Sim, mas não contínuo"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 34,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":42,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
         },
-        "text": {
-            "en": "Do employees report phishing attempts and suspicious emails?",
-            "pt": "Os funcionários relatam tentativas de phishing e e -mails suspeitos?"
+        "text":{
+            "en":"Do you have a secure method for sharing sensitive information internally?",
+            "pt":"Você tem um método seguro para compartilhar informações confidenciais internamente?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with mandatory reporting",
-                    "pt": "Sim, com relatórios obrigatórios"
+                "text":{
+                    "en":"Yes, with encryption and access controls",
+                    "pt":"Sim, com controlos de criptografia e acesso"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but voluntary",
-                    "pt": "Sim, mas voluntário"
+                "text":{
+                    "en":"Partially implemented",
+                    "pt":"Parcialmente implementado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
                 }
             }
         ]
     },
     {
-        "id": 35,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":36,
+        "category":{
+            "en":"Incident Response and Recovery",
+            "pt":"Resposta de incidentes e recuperação"
         },
-        "text": {
-            "en": "Do you provide training on safe browsing practices?",
-            "pt": "Você fornece treinamento sobre práticas de navegação segura?"
+        "text":{
+            "en":"Do you have automated tools to detect and respond to security incidents?",
+            "pt":"Você tem ferramentas automatizadas para detectar e responder a incidentes de segurança?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, regularly",
-                    "pt": "Sim, regularmente"
+                "text":{
+                    "en":"Yes, fully automated",
+                    "pt":"Sim, totalmente automatizado"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Test and refine the incident response plan regularly to improve effectiveness.",
+                    "pt":"Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but infrequently",
-                    "pt": "Sim, mas com pouca frequência"
+                "text":{
+                    "en":"Yes, partially automated",
+                    "pt":"Sim, parcialmente automatizado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand and formalize the incident response plan with clear response actions.",
+                    "pt":"Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop and implement an incident response plan to minimize downtime.",
+                    "pt":"Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
                 }
             }
         ]
     },
     {
-        "id": 36,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":15,
+        "category":{
+            "en":"Access Control",
+            "pt":"Controlos de acesso"
         },
-        "text": {
-            "en": "Do you have automated tools to detect and respond to security incidents?",
-            "pt": "Você tem ferramentas automatizadas para detectar e responder a incidentes de segurança?"
+        "text":{
+            "en":"Are login attempts monitored for suspicious activity?",
+            "pt":"As tentativas de login são monitorizadas quanto a atividades suspeitas?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, fully automated",
-                    "pt": "Sim, totalmente automatizado"
+                "text":{
+                    "en":"Yes, real-time monitoring",
+                    "pt":"Sim, monitorização em tempo real"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, partially automated",
-                    "pt": "Sim, parcialmente automatizado"
+                "text":{
+                    "en":"Yes, but not real-time",
+                    "pt":"Sim, mas não em tempo real"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             }
         ]
     },
     {
-        "id": 37,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":20,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you maintain a log of all security incidents and breaches?",
-            "pt": "Você mantém um registro de todos os incidentes de segurança e violações?"
+        "text":{
+            "en":"Do you conduct phishing simulation exercises?",
+            "pt":"Você conduz exercícios de simulação de phishing?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with detailed analysis",
-                    "pt": "Sim, com análise detalhada"
+                "text":{
+                    "en":"Yes, annually or more frequently",
+                    "pt":"Sim, anualmente ou com mais frequência"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but without detailed analysis",
-                    "pt": "Sim, mas sem análise detalhada"
+                "text":{
+                    "en":"Yes, but less frequently",
+                    "pt":"Sim, mas com menos frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 38,
-        "category": {
-            "en": "Third-Party Risk Management",
-            "pt": "Gerenciamento de riscos de terceiros"
+        "id":48,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you ensure that vendors have cybersecurity insurance?",
-            "pt": "Você garante que os fornecedores tenham seguro de segurança cibernética?"
+        "text":{
+            "en":"Do you train employees on securely using mobile and personal devices for work?",
+            "pt":"Você treina funcionários com segurança usando dispositivos móveis e pessoais para o trabalho?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, as part of contracts",
-                    "pt": "Sim, como parte dos contratos"
+                "text":{
+                    "en":"Yes, regularly",
+                    "pt":"Sim, regularmente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain regular audits of third-party vendors and enforce compliance requirements.",
-                    "pt": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "No, but considered",
-                    "pt": "Não, mas considerado"
+                "text":{
+                    "en":"Yes, but infrequently",
+                    "pt":"Sim, mas com pouca frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen vendor security assessments and require compliance documentation.",
-                    "pt": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement a vendor risk management program to evaluate third-party security.",
-                    "pt": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 39,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":17,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
         },
-        "text": {
-            "en": "Do you enforce a data retention and deletion policy?",
-            "pt": "Você aplica uma política de retenção e exclusão de dados?"
+        "text":{
+            "en":"Is sensitive data encrypted in transit?",
+            "pt":"Os dados sensíveis são criptografados em trânsito?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, strictly enforced",
-                    "pt": "Sim, estritamente aplicado"
+                "text":{
+                    "en":"Yes, always",
+                    "pt":"Sim, sempre"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but loosely followed",
-                    "pt": "Sim, mas pouco seguido"
+                "text":{
+                    "en":"Sometimes",
+                    "pt":"Às vezes"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
                 }
             }
         ]
     },
     {
-        "id": 40,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
+        "id":11,
+        "category":{
+            "en":"Access Control",
+            "pt":"Controlos de acesso"
         },
-        "text": {
-            "en": "Do you regularly review and update your cybersecurity policies?",
-            "pt": "Você revisa e atualiza regularmente suas políticas de segurança cibernética?"
+        "text":{
+            "en":"Do all employees have unique login credentials?",
+            "pt":"Todos os funcionários têm credenciais exclusivas de login?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, annually or more frequently",
-                    "pt": "Sim, anualmente ou com mais frequência"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"No, shared accounts are used",
+                    "pt":"Não, contas compartilhadas são usadas"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"Not Sure",
+                    "pt":"Não tenho certeza"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             }
         ]
     },
     {
-        "id": 41,
-        "category": {
-            "en": "Access Control",
-            "pt": "Controle de acesso"
+        "id":19,
+        "category":{
+            "en":"Incident Response and Recovery",
+            "pt":"Resposta de incidentes e recuperação"
         },
-        "text": {
-            "en": "Do you enforce password complexity requirements (e.g., length, special characters)?",
-            "pt": "Você aplica requisitos de complexidade de senha (por exemplo, comprimento, caracteres especiais)?"
+        "text":{
+            "en":"Are regular backups of critical data performed?",
+            "pt":"Os backups regulares dos dados críticos são executados?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, strictly enforced",
-                    "pt": "Sim, estritamente aplicado"
+                "text":{
+                    "en":"Yes, with offsite storage",
+                    "pt":"Sim, com armazenamento externo"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue enforcing strict access controls and review policies regularly.",
-                    "pt": "Continue aplicando controles rígidos de acesso e revise as políticas regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Test and refine the incident response plan regularly to improve effectiveness.",
+                    "pt":"Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
                 }
             },
             {
-                "text": {
-                    "en": "Partially enforced",
-                    "pt": "Parcialmente aplicado"
+                "text":{
+                    "en":"Yes, but no offsite storage",
+                    "pt":"Sim, mas sem armazenamento externo"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance access control measures by implementing multi-factor authentication.",
-                    "pt": "Aprimore as medidas de controle de acesso implementando a autenticação multifatorial."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand and formalize the incident response plan with clear response actions.",
+                    "pt":"Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt": "Implementar mecanismos estritos de controle de acesso para evitar acesso não autorizado."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop and implement an incident response plan to minimize downtime.",
+                    "pt":"Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
                 }
             }
         ]
     },
     {
-        "id": 42,
-        "category": {
-            "en": "Data Protection",
-            "pt": "Proteção de dados"
+        "id":32,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you have a secure method for sharing sensitive information internally?",
-            "pt": "Você tem um método seguro para compartilhar informações confidenciais internamente?"
+        "text":{
+            "en":"Do you conduct mandatory cybersecurity awareness training for new hires?",
+            "pt":"Você conduz treino obrigatório de conscientização sobre cibersegurança para novas contratações?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with encryption and access controls",
-                    "pt": "Sim, com controles de criptografia e acesso"
+                "text":{
+                    "en":"Yes, within the first month",
+                    "pt":"Sim, no primeiro mês"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt": "Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Partially implemented",
-                    "pt": "Parcialmente implementado"
+                "text":{
+                    "en":"Yes, but delayed",
+                    "pt":"Sim, mas atrasado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand encryption and data protection measures to cover all critical information.",
-                    "pt": "Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement encryption and data loss prevention tools to safeguard sensitive data.",
-                    "pt": "Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 43,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":35,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you block access to malicious websites using a web filtering solution?",
-            "pt": "Você bloqueia o acesso a sites maliciosos usando uma solução de filtragem na web?"
+        "text":{
+            "en":"Do you provide training on safe browsing practices?",
+            "pt":"Você fornece treino sobre práticas de navegação segura?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with real-time updates",
-                    "pt": "Sim, com atualizações em tempo real"
+                "text":{
+                    "en":"Yes, regularly",
+                    "pt":"Sim, regularmente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but updates are infrequent",
-                    "pt": "Sim, mas as atualizações são pouco frequentes"
+                "text":{
+                    "en":"Yes, but infrequently",
+                    "pt":"Sim, mas com pouca frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 44,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":49,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you provide ongoing training on identifying and preventing phishing attacks?",
-            "pt": "Você fornece treinamento contínuo para identificar e prevenir ataques de phishing?"
+        "text":{
+            "en":"Do you conduct security assessments on cloud services used by your organization?",
+            "pt":"Você realiza avaliações de segurança nos serviços em nuvem usados ​​por sua organização?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, quarterly or more frequently",
-                    "pt": "Sim, trimestralmente ou com mais frequência"
+                "text":{
+                    "en":"Yes, before adoption and periodically",
+                    "pt":"Sim, antes da adoção e periodicamente"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, annually",
-                    "pt": "Sim, anualmente"
+                "text":{
+                    "en":"Yes, but only once during adoption",
+                    "pt":"Sim, mas apenas uma vez durante a adoção"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
     },
     {
-        "id": 45,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":2,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
         },
-        "text": {
-            "en": "Do you test your backup restoration process regularly?",
-            "pt": "Você testa seu processo de restauração de backup regularmente?"
+        "text":{
+            "en":"Are cybersecurity roles and responsibilities clearly defined within your organization?",
+            "pt":"As funções e responsabilidades de cibersegurança são claramente definidas em sua organização?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, at least annually",
-                    "pt": "Sim, pelo menos anualmente"
+                "text":{
+                    "en":"Yes, documented and assigned",
+                    "pt":"Sim, documentado e designado"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but less frequently",
-                    "pt": "Sim, mas com menos frequência"
+                "text":{
+                    "en":"Yes, but informal",
+                    "pt":"Sim, mas informal"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
                 }
             }
         ]
     },
     {
-        "id": 46,
-        "category": {
-            "en": "Governance and Policies",
-            "pt": "Governança e políticas"
+        "id":34,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you conduct third-party audits of your cybersecurity program?",
-            "pt": "Você realiza auditorias de terceiros do seu programa de segurança cibernética?"
+        "text":{
+            "en":"Do employees report phishing attempts and suspicious emails?",
+            "pt":"Os funcionários relatam tentativas de phishing e e -mails suspeitos?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, annually or more frequently",
-                    "pt": "Sim, anualmente ou com mais frequência"
+                "text":{
+                    "en":"Yes, with mandatory reporting",
+                    "pt":"Sim, com relatórios obrigatórios"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain a strong governance framework and review policies periodically.",
-                    "pt": "Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but infrequently",
-                    "pt": "Sim, mas com pouca frequência"
+                "text":{
+                    "en":"Yes, but voluntary",
+                    "pt":"Sim, mas voluntário"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Enhance governance measures by aligning with industry best practices.",
-                    "pt": "Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop formal security policies and ensure organization-wide enforcement.",
-                    "pt": "Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 47,
-        "category": {
-            "en": "Third-Party Risk Management",
-            "pt": "Gerenciamento de riscos de terceiros"
+        "id":33,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
         },
-        "text": {
-            "en": "Do you require vendors to follow data protection regulations (e.g., GDPR, HIPAA)?",
-            "pt": "Você exige que os fornecedores sigam os regulamentos de proteção de dados (por exemplo, GDPR, HIPAA)?"
+        "text":{
+            "en":"Do you regularly communicate cybersecurity updates to employees?",
+            "pt":"Você comunica regularmente atualizações de cibersegurança aos funcionários?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, with regular compliance checks",
-                    "pt": "Sim, com verificações regulares de conformidade"
+                "text":{
+                    "en":"Yes, monthly or more frequently",
+                    "pt":"Sim, mensalmente ou com mais frequência"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Maintain regular audits of third-party vendors and enforce compliance requirements.",
-                    "pt": "Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but without compliance checks",
-                    "pt": "Sim, mas sem verificações de conformidade"
+                "text":{
+                    "en":"Yes, but less frequently",
+                    "pt":"Sim, mas com menos frequência"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen vendor security assessments and require compliance documentation.",
-                    "pt": "Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement a vendor risk management program to evaluate third-party security.",
-                    "pt": "Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
                 }
             }
         ]
     },
     {
-        "id": 48,
-        "category": {
-            "en": "Employee Awareness and Training",
-            "pt": "Conscientização e treinamento dos funcionários"
+        "id":7,
+        "category":{
+            "en":"Network Security",
+            "pt":"Segurança de rede"
         },
-        "text": {
-            "en": "Do you train employees on securely using mobile and personal devices for work?",
-            "pt": "Você treina funcionários com segurança usando dispositivos móveis e pessoais para o trabalho?"
+        "text":{
+            "en":"Do you use intrusion detection and prevention systems (IDS\/IPS)?",
+            "pt":"Você usa sistemas de detecção e prevenção de intrusões (IDS\/IPS)?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, regularly",
-                    "pt": "Sim, regularmente"
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Continue regular security awareness training and phishing simulations.",
-                    "pt": "Continue simulações regulares de treinamento e phishing de conscientização de segurança."
+                "score":10,
+                "recommendation":{
+                    "en":"Regularly review and update network security configurations and segment networks appropriately.",
+                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but infrequently",
-                    "pt": "Sim, mas com pouca frequência"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Increase training frequency and introduce interactive security awareness programs.",
-                    "pt": "Aumente a frequência de treinamento e introduza programas de conscientização de segurança interativos."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
+                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"Not Sure",
+                    "pt":"Não tenho certeza"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop a mandatory security training program to educate employees on risks.",
-                    "pt": "Desenvolva um programa obrigatório de treinamento de segurança para educar os funcionários sobre riscos."
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
+                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             }
         ]
     },
     {
-        "id": 49,
-        "category": {
-            "en": "Network Security",
-            "pt": "Segurança de rede"
+        "id":13,
+        "category":{
+            "en":"Access Control",
+            "pt":"controlos de acesso"
         },
-        "text": {
-            "en": "Do you conduct security assessments on cloud services used by your organization?",
-            "pt": "Você realiza avaliações de segurança nos serviços em nuvem usados ​​por sua organização?"
+        "text":{
+            "en":"Are accounts of terminated employees promptly deactivated?",
+            "pt":"As contas de funcionários rescindidos são prontamente desativados?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, before adoption and periodically",
-                    "pt": "Sim, antes da adoção e periodicamente"
+                "text":{
+                    "en":"Yes, within 24 hours",
+                    "pt":"Sim, dentro de 24 horas"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt": "Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but only once during adoption",
-                    "pt": "Sim, mas apenas uma vez durante a adoção"
+                "text":{
+                    "en":"Yes, but delayed",
+                    "pt":"Sim, mas atrasado"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt": "Fortalecer a segurança da rede adicionando controles adicionais de monitoramento e segmentação."
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Implement firewall, IDS/IPS, and network segmentation to improve security.",
-                    "pt": "Implementar firewall, IDS/IPS e segmentação de rede para melhorar a segurança."
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             }
         ]
     },
     {
-        "id": 50,
-        "category": {
-            "en": "Incident Response and Recovery",
-            "pt": "Resposta de incidentes e recuperação"
+        "id":37,
+        "category":{
+            "en":"Incident Response and Recovery",
+            "pt":"Resposta de incidentes e recuperação"
         },
-        "text": {
-            "en": "Do you use automated threat intelligence tools to improve your incident response?",
-            "pt": "Você usa ferramentas automatizadas de inteligência de ameaças para melhorar sua resposta a incidentes?"
+        "text":{
+            "en":"Do you maintain a log of all security incidents and breaches?",
+            "pt":"Você mantém um registro de todos os incidentes de segurança e violações?"
         },
-        "options": [
+        "options":[
             {
-                "text": {
-                    "en": "Yes, integrated with response tools",
-                    "pt": "Sim, integrado com ferramentas de resposta"
+                "text":{
+                    "en":"Yes, with detailed analysis",
+                    "pt":"Sim, com análise detalhada"
                 },
-                "score": 10,
-                "recommendation": {
-                    "en": "Test and refine the incident response plan regularly to improve effectiveness.",
-                    "pt": "Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                "score":10,
+                "recommendation":{
+                    "en":"Test and refine the incident response plan regularly to improve effectiveness.",
+                    "pt":"Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
                 }
             },
             {
-                "text": {
-                    "en": "Yes, but not integrated",
-                    "pt": "Sim, mas não integrado"
+                "text":{
+                    "en":"Yes, but without detailed analysis",
+                    "pt":"Sim, mas sem análise detalhada"
                 },
-                "score": 5,
-                "recommendation": {
-                    "en": "Expand and formalize the incident response plan with clear response actions.",
-                    "pt": "Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                "score":5,
+                "recommendation":{
+                    "en":"Expand and formalize the incident response plan with clear response actions.",
+                    "pt":"Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
                 }
             },
             {
-                "text": {
-                    "en": "No",
-                    "pt": "Não"
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
                 },
-                "score": 0,
-                "recommendation": {
-                    "en": "Develop and implement an incident response plan to minimize downtime.",
-                    "pt": "Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                "score":0,
+                "recommendation":{
+                    "en":"Develop and implement an incident response plan to minimize downtime.",
+                    "pt":"Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                }
+            }
+        ]
+    },
+    {
+        "id":3,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
+        },
+        "text":{
+            "en":"Do you perform annual cybersecurity risk assessments?",
+            "pt":"Você realiza avaliações anuais de risco de cibersegurança?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes",
+                    "pt":"Sim"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                }
+            },
+            {
+                "text":{
+                    "en":"Occasionally",
+                    "pt":"Ocasionalmente"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                }
+            }
+        ]
+    },
+    {
+        "id":47,
+        "category":{
+            "en":"Third-Party Risk Management",
+            "pt":"Gerenciamento de riscos de terceiros"
+        },
+        "text":{
+            "en":"Do you require vendors to follow data protection regulations (e.g., GDPR, HIPAA)?",
+            "pt":"Você exige que os fornecedores sigam os regulamentos de proteção de dados (por exemplo, GDPR, HIPAA)?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, with regular compliance checks",
+                    "pt":"Sim, com verificações regulares de conformidade"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain regular audits of third-party vendors and enforce compliance requirements.",
+                    "pt":"Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, but without compliance checks",
+                    "pt":"Sim, mas sem verificações de conformidade"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen vendor security assessments and require compliance documentation.",
+                    "pt":"Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement a vendor risk management program to evaluate third-party security.",
+                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                }
+            }
+        ]
+    },
+    {
+        "id":24,
+        "category":{
+            "en":"Incident Response and Recovery",
+            "pt":"Resposta de incidentes e recuperação"
+        },
+        "text":{
+            "en":"Do you conduct regular incident response training exercises?",
+            "pt":"Você realiza exercícios de treino regular de resposta a incidentes?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, annually or more frequently",
+                    "pt":"Sim, anualmente ou com mais frequência"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Test and refine the incident response plan regularly to improve effectiveness.",
+                    "pt":"Teste e refine o plano de resposta a incidentes regularmente para melhorar a eficácia."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, but less frequently",
+                    "pt":"Sim, mas com menos frequência"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Expand and formalize the incident response plan with clear response actions.",
+                    "pt":"Expanda e formalize o plano de resposta a incidentes com ações de resposta clara."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Develop and implement an incident response plan to minimize downtime.",
+                    "pt":"Desenvolva e implemente um plano de resposta a incidentes para minimizar o tempo de inatividade."
+                }
+            }
+        ]
+    },
+    {
+        "id":4,
+        "category":{
+            "en":"Governance and Policies",
+            "pt":"Governança e políticas"
+        },
+        "text":{
+            "en":"Do you have a cybersecurity awareness program in place for employees?",
+            "pt":"Você tem um programa de conscientização sobre cibersegurança para funcionários?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, ongoing and mandatory",
+                    "pt":"Sim, em progresso e obrigatório"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain a strong governance framework and review policies periodically.",
+                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, but infrequent",
+                    "pt":"Sim, mas pouco frequente"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance governance measures by aligning with industry best practices.",
+                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Develop formal security policies and ensure organization-wide enforcement.",
+                    "pt":"Desenvolva políticas formais de segurança e garantir a aplicação da organização."
+                }
+            }
+        ]
+    },
+    {
+        "id":39,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
+        },
+        "text":{
+            "en":"Do you enforce a data retention and deletion policy?",
+            "pt":"Você aplica uma política de retenção e exclusão de dados?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, strictly enforced",
+                    "pt":"Sim, estritamente aplicado"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, but loosely followed",
+                    "pt":"Sim, mas pouco seguido"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                }
+            }
+        ]
+    },
+    {
+        "id":38,
+        "category":{
+            "en":"Third-Party Risk Management",
+            "pt":"Gerenciamento de riscos de terceiros"
+        },
+        "text":{
+            "en":"Do you ensure that vendors have cybersecurity insurance?",
+            "pt":"Você garante que os fornecedores tenham seguro de cibersegurança?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, as part of contracts",
+                    "pt":"Sim, como parte dos contratos"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Maintain regular audits of third-party vendors and enforce compliance requirements.",
+                    "pt":"Mantenha auditorias regulares de fornecedores de terceiros e aplique os requisitos de conformidade."
+                }
+            },
+            {
+                "text":{
+                    "en":"No, but considered",
+                    "pt":"Não, mas considerado"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Strengthen vendor security assessments and require compliance documentation.",
+                    "pt":"Fortalecer as avaliações de segurança do fornecedor e requer documentação de conformidade."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement a vendor risk management program to evaluate third-party security.",
+                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                }
+            }
+        ]
+    },
+    {
+        "id":26,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
+        },
+        "text":{
+            "en":"Do you implement role-based access controls (RBAC)?",
+            "pt":"Você implementa os controlos de acesso baseados em funções (RBAC)?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, strictly enforced",
+                    "pt":"Sim, estritamente aplicado"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                }
+            },
+            {
+                "text":{
+                    "en":"Partially implemented",
+                    "pt":"Parcialmente implementado"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
+                }
+            }
+        ]
+    },
+    {
+        "id":44,
+        "category":{
+            "en":"Employee Awareness and Training",
+            "pt":"Conscientização e treino dos funcionários"
+        },
+        "text":{
+            "en":"Do you provide ongoing training on identifying and preventing phishing attacks?",
+            "pt":"Você fornece treino contínuo para identificar e prevenir ataques de phishing?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, quarterly or more frequently",
+                    "pt":"Sim, trimestralmente ou com mais frequência"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Continue regular security awareness training and phishing simulations.",
+                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, annually",
+                    "pt":"Sim, anualmente"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Increase training frequency and introduce interactive security awareness programs.",
+                    "pt":"Aumente a frequência de treino e introduza programas de conscientização de segurança interativos."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Develop a mandatory security training program to educate employees on risks.",
+                    "pt":"Desenvolva um programa obrigatório de treino de segurança para educar os funcionários sobre riscos."
+                }
+            }
+        ]
+    },
+    {
+        "id":12,
+        "category":{
+            "en":"Access Control",
+            "pt":"controlos de acesso"
+        },
+        "text":{
+            "en":"Is multi-factor authentication (MFA) enabled for all critical systems?",
+            "pt":"A autenticação multifatorial (MFA) é ativada para todos os sistemas críticos?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, for all systems",
+                    "pt":"Sim para todos os sistemas"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Continue enforcing strict access controls and review policies regularly.",
+                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, for some systems",
+                    "pt":"Sim para alguns sistemas"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Enhance access control measures by implementing multi-factor authentication.",
+                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement strict access control mechanisms to prevent unauthorized access.",
+                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
+                }
+            }
+        ]
+    },
+    {
+        "id":25,
+        "category":{
+            "en":"Data Protection",
+            "pt":"Proteção de dados"
+        },
+        "text":{
+            "en":"Do you enforce strong password policies across the organization?",
+            "pt":"Você aplica políticas de senha fortes em toda a organização?"
+        },
+        "options":[
+            {
+                "text":{
+                    "en":"Yes, with mandatory updates",
+                    "pt":"Sim, com atualizações obrigatórias"
+                },
+                "score":10,
+                "recommendation":{
+                    "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                }
+            },
+            {
+                "text":{
+                    "en":"Yes, but updates are optional",
+                    "pt":"Sim, mas as atualizações são opcionais"
+                },
+                "score":5,
+                "recommendation":{
+                    "en":"Expand encryption and data protection measures to cover all critical information.",
+                    "pt":"Expanda as medidas de criptografia e proteção de dados para cobrir todas as informações críticas."
+                }
+            },
+            {
+                "text":{
+                    "en":"No",
+                    "pt":"Não"
+                },
+                "score":0,
+                "recommendation":{
+                    "en":"Implement encryption and data loss prevention tools to safeguard sensitive data.",
+                    "pt":"Implementar ferramentas de criptografia e prevenção de perda de dados para proteger dados sensíveis."
                 }
             }
         ]

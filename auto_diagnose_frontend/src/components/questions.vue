@@ -14,6 +14,7 @@
       </button>
       <button
         @click="switchLanguage"
+        :disabled="languageBlocked"
         class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg transition-colors"
       >
         {{ language === "en" ? "🇵🇹 Português" : "🇬🇧 English" }}
@@ -107,7 +108,7 @@
 
     </div>
     <!-- Results Section -->
-    <div v-else class="text-center max-w-4xl w-full animate-fade-in">
+    <div v-else class="text-center max-w-4xl w-full animate-fade-in overflow-y-auto max-h-[80vh] px-4">
       <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 md:p-8 border border-white/20 shadow-2xl">
         <h2 class="text-3xl font-bold mb-4 text-blue-200">
           {{ language === "en" ? "Diagnostic Results" : "Resultados do Diagnóstico" }}
@@ -175,6 +176,7 @@ export default {
       language: localStorage.getItem("language") || "en", // Load stored language or default to English
       questions: [],
       currentQuestionIndex: 0,
+      languageBlocked: false, // Block language switching after moving forward
       selectedAnswers: {},
       loading: true,
       percentageScore: null,
@@ -234,6 +236,7 @@ export default {
     async generatePDF() {
       try {
         const payload = {
+          lang: this.language, // ✅ Agora enviando o idioma correto
           answers: Object.values(this.selectedAnswers),
           category_scores: this.categoryScores,
           category_max_scores: this.categoryMaxScores,
@@ -276,6 +279,9 @@ export default {
       if (this.currentQuestionIndex > 0) {
         this.currentQuestionIndex--;
       }
+      if (this.currentQuestionIndex === 0) {
+        this.languageBlocked = false;
+      }
     },
 
     nextQuestion() {
@@ -284,6 +290,10 @@ export default {
         this.selectedAnswers[this.currentQuestionIndex]
       ) {
         this.currentQuestionIndex++;
+      }
+          // If we move past the first page, block the language switch
+      if (this.currentQuestionIndex > 0) {
+        this.languageBlocked = true;
       }
     },
 
@@ -344,8 +354,10 @@ export default {
     },
 
     switchLanguage() {
-      this.language = this.language === "en" ? "pt" : "en";
-      localStorage.setItem("language", this.language);
+      if (!this.languageBlocked) {
+        this.language = this.language === "en" ? "pt" : "en";
+        localStorage.setItem("language", this.language);
+      }
       this.fetchQuestions();
     }
   },
@@ -369,5 +381,10 @@ export default {
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-out;
+}
+
+html, body {
+  overflow-y: auto;
+  height: 100%;
 }
 </style>

@@ -14,3 +14,5 @@ auto_diagnose_frontend/dist/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+auto_diagnose_backend/fonts/*.pkl
