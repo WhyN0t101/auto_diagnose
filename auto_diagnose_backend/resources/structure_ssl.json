@@ -1,0 +1,86 @@
+{
+  "chapter": "Vulnerabilidades SSL",
+  "sections": [
+    {
+      "section": "Introdução",
+      "description": "O domínio [__website__](__website__) foi analisado relativamente às configurações e utilização do protocolo SSL/TLS, dos seus certificados HTTPS e do seu redirecionamento para os mesmos. Este capítulo apresenta a(s) vulnerabilidade(s) a que o website está exposto, se os certificados HTTPS expiraram e se estão a redirecionar os utilizadores para a versão encriptada do site. Cada vulnerabilidade detetada é acompanhada de uma pequena descrição e recomendações de mitigação para a mesma."
+    },
+    {
+      "id": "redirect",
+      "section": "HTTP seguro e certificados SSL",
+      "description": "O website não redireciona os utilizadores para a versão encriptada do site. Isto significa que os utilizadores podem aceder ao website através de HTTP, o que pode permitir a um atacante interceptar a comunicação entre o cliente e o servidor. Recomenda-se a implementação de um redirecionamento para HTTPS, de forma a garantir que todos os utilizadores acedem ao website de forma segura.",
+      "no_vuln_description": "O website redireciona os utilizadores para a versão encriptada do site, garantindo que todos os utilizadores acedem ao website de forma segura.",
+      "good_cert": "\nO certificado SSL do website é válido e não expirou. Desta forma, os utilizadores têm uma garantia que estão a aceder ao website de forma segura.",
+      "bad_cert": "\nO certificado SSL do website é inválido. Isto significa que os utilizadores podem ser alvo de ataques."
+    },
+    {
+      "id": "ssl_tls_vulns",
+      "section": "Vulnerabilidades SSL e TLS 1.0",
+      "description": "A(s) seguinte(s) vulnerabilidade(s) SSL e TLS 1.0 foram detectadas e a sua mitigação é apresentada no fim desta secção.",
+      "no_vuln_description": "Não foram detetadas vulnerabilidades SSL e TLS 1.0 neste domínio.",
+      "vulnerabilities": [
+        {
+          "name": "__vuln-name__",
+          "description": "__vuln-description__"
+        }
+      ],
+      "mitigation": "__vuln-mitigation__"
+    },
+    {
+      "id": "openssl_vulns",
+      "section": "Vulnerabilidades OpenSSL",
+      "description": "A(s) seguinte(s) vulnerabilidade(s) OpenSSL foram detectadas e a sua mitigação é apresentada no fim desta secção.",
+      "no_vuln_description": "Não foram detetadas vulnerabilidades OpenSSL neste domínio.",
+      "vulnerabilities": [
+        {
+          "name": "__vuln-name__",
+          "description": "__vuln-description__"
+        }
+      ],
+      "mitigation": "__vuln-mitigation__"
+    },
+    {
+      "id": "openssl_heartbeat_vuln",
+      "section": "Vulnerabilidade OpenSSL e Heartbeat",
+      "description": "A seguinte vulnerabilidade OpenSSL e Heartbeat foi detectada e a sua mitigação é apresentada no fim desta secção.",
+      "no_vuln_description": "Não foram detetadas vulnerabilidades OpenSSL e Heartbeat neste domínio.",
+      "vulnerabilities": [
+        {
+          "name": "__vuln-name__",
+          "description": "__vuln-description__"
+        }
+      ],
+      "mitigation": "__vuln-mitigation__"
+    },
+    {
+      "id": "insecure_export_ciphers",
+      "section": "Vulnerabilidade a Cifras de Exportação Inseguras",
+      "description": "A seguinte vulnerabilidade a Cifras de Exportação Inseguras foi detectada e a sua mitigação é apresentada no fim desta secção.",
+      "no_vuln_description": "Não foram detetadas vulnerabilidades a Cifras de Exportação Inseguras neste domínio.",
+      "vulnerabilities": [
+        {
+          "name": "__vuln-name__",
+          "description": "__vuln-description__"
+        }
+      ],
+      "mitigation": "__vuln-mitigation__"
+    },
+    {
+      "id": "tls_ciphers_vulns",
+      "section": "Vulnerabilidade a Cifras TLS",
+      "description": "A seguinte vulnerabilidade a Cifras TLS foi detectada e a sua mitigação é apresentada no fim desta secção.",
+      "no_vuln_description": "Não foram detetadas vulnerabilidades a Cifras TLS neste domínio.",
+      "vulnerabilities": [
+        {
+          "name": "__vuln-name__",
+          "description": "__vuln-description__"
+        }
+      ],
+      "mitigation": "__vuln-mitigation__"
+    },
+    {
+      "section": "Conclusão",
+      "description": "De modo geral, as vulnerabilidades acima descritas podem ser evitadas seguindo as recomendações que se seguem:\n\n• Suporte a TLS 1.2 ou superior - a maioria dos websites, na Internet, utiliza a versão 1.2, embora a última versão seja a versão 1.3. Todavia, recomenda-se a utilização destas versões sem o modo de cifra CBC (Cipher Block Chaining);\n• Desativar o suporte a SSL 2.0 ou SSL 3.0;\n• Manter o sistema operativo devidamente atualizado, em especial todas as atualizações de segurança.\n\nA configuração do servidor web pode ser gerada, com as melhores práticas aplicadas, recorrendo à ferramenta disponibilizada pela Mozilla, disponível em [https://ssl-config.mozilla.org](https://ssl-config.mozilla.org).\n\nMesmo que não tenha sido detectada nenhuma vulnerabilidade neste capítulo, é vivamente recomendado que as recomendações anteriores estejam em vigor e a serem cumpridas."
+    }
+  ]
+}

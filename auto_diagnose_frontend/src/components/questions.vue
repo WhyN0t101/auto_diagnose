@@ -115,11 +115,14 @@
         </h2>
 
         <!-- Overall Percentage -->
-        <div class="text-5xl font-bold text-blue-300 mb-6">
-          {{ percentageScore ? `${percentageScore}%` : '--' }}
+        <div class="text-3xl font-bold mb-4" :class="cybersecurityPosture.color">
+          {{ percentageScore ? `${percentageScore}% - ${cybersecurityPosture.level}` : '--' }}
         </div>
+        <p class="text-lg text-gray-200">
+          {{ cybersecurityPostureExplanation }}
+        </p>
 
-        <!-- Category Breakdown -->
+                <!-- Category Breakdown -->
         <h3 class="text-2xl font-semibold mb-4 text-blue-100">
           {{ language === "en" ? "Category Breakdown" : "Desempenho por Categoria" }}
         </h3>
@@ -205,6 +208,39 @@ export default {
   },
 
   computed: {
+    cybersecurityPosture() {
+    if (this.percentageScore >= 80) return { level: "Excellent", color: "text-green-400" };
+    if (this.percentageScore >= 60) return { level: "Good", color: "text-blue-400" };
+    if (this.percentageScore >= 40) return { level: "Moderate Risk", color: "text-yellow-400" };
+    if (this.percentageScore >= 20) return { level: "High Risk", color: "text-orange-400" };
+    return { level: "Critical Risk", color: "text-red-400" };
+  },
+  cybersecurityPostureExplanation() {
+    switch (this.cybersecurityPosture.level) {
+      case "Excellent":
+        return this.language === "en"
+          ? "Your company has strong cybersecurity measures. Keep maintaining them!"
+          : "A sua empresa tem boas medidas de segurança. Continue assim!";
+      case "Good":
+        return this.language === "en"
+          ? "Your security is good, but some areas need improvement."
+          : "A sua segurança é boa, mas algumas áreas precisam de melhorias.";
+      case "Moderate Risk":
+        return this.language === "en"
+          ? "Your company has weaknesses that should be addressed soon."
+          : "A sua empresa tem fraquezas que devem ser resolvidas em breve.";
+      case "High Risk":
+        return this.language === "en"
+          ? "Your company is at risk. Security improvements are highly recommended."
+          : "A sua empresa está em risco. Recomendamos melhorias urgentes.";
+      case "Critical Risk":
+        return this.language === "en"
+          ? "Your company is at severe risk. Immediate security action is needed!"
+          : "A sua empresa está em risco crítico. Medidas de segurança urgentes são necessárias!";
+      default:
+        return "";
+    }
+  },
     // Traduz categorias dinamicamente
     translatedCategoryScores() {
       return Object.keys(this.categoryScores).reduce((acc, category) => {

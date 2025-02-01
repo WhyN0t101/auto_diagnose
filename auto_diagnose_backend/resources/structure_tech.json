@@ -1,0 +1,47 @@
+{
+  "chapter": "Tecnologias",
+  "sections": [
+    {
+      "section": "Introdução",
+      "description": "Neste capítulo são enunciadas as diversas tecnologias detectadas pela análise (e as suas versões, quando possível). Para cada tecnologia é exposto o número de vulnerabilidades conhecidas, bem como se as mesmas têm um exploit público conhecido. As vulnerabilidades são ordenadas de forma decrescente, juntamente com a sua pontuação CVSS (Common Vulnerability Scoring System), onde uma pontuação de 0 corresponde a uma severidade nula e 10 uma severidade máxima ou crítica. As hiperligações disponibilizadas facilitam a consulta e identificação do tipo de vulnerabilidade, juntamente com detalhes adicionais."
+    },
+    {
+      "id": "known_version_technologies",
+      "section": "Tecnologias identificadas com versão",
+
+      "description_vuln_singular_no_exploit": "A tecnologia __tech__ está presente no website na versão __version__ e apresenta __number_vulns__ vulnerabilidade, a qual não tem exploit conhecido.",
+      "description_vuln_singular_with_exploit": "A tecnologia __tech__ está presente no website na versão __version__ e apresenta __number_vulns__ vulnerabilidade, a qual tem exploit conhecido.",
+
+      "description_vuln_multiple_no_exploit": "A tecnologia __tech__ está presente no website na versão __version__ e apresenta __number_vulns__ vulnerabilidades, as quais não têm exploit conhecido.",
+      "description_vuln_multiple_one_exploit": "A tecnologia __tech__ está presente no website na versão __version__ e apresenta __number_vulns__ vulnerabilidades, as quais 1 tem exploit conhecido.",
+      "description_vuln_multiple_multiple_exploits": "A tecnologia __tech__ está presente no website na versão __version__ e apresenta __number_vulns__ vulnerabilidades, as quais __number_exploit__ têm exploit conhecido.",
+
+      "description_no_vuln_no_exploit": "A tecnologia __tech__ está presente no website na versão __version__ e não apresenta vulnerabilidades.",
+
+      "vulnerabilities": [
+        {
+          "id": "__vuln-id__",
+          "link": "__vuln-link__",
+          "exploitable": "__vuln-exploitable__"
+        }
+      ]
+    },
+    {
+      "id": "unknown_version_technologies",
+      "section": "Tecnologias identificadas sem versão",
+      "description_single": "A seguinte tecnologia está presente no website, mas não foi possível identificar a versão em utilização. Ainda assim, recomenda-se que seja confirmada a versão da mesma, e, caso se verifique que esta está desatualizada, colocar em prática um plano de atualização, mitigando qualquer vulnerabilidade que possa existir e que seja um possível vetor de ataque.",
+      "description_multiple": "As seguintes tecnologias estão presentes no website, mas não foi possível identificar as versões em utilização. Ainda assim, recomenda-se que sejam confirmadas as versões das mesmas, e, caso se verifique que estas estão desatualizadas, colocar em prática um plano de atualização, mitigando qualquer vulnerabilidade que possa existir e que seja um possível vetor de ataque.",
+      "technologies": [
+        {
+          "name": "__tech__"
+        }
+      ]
+    },
+    {
+      "section": "Conclusão",
+      "description_none": "Não foram identificadas tecnologias desatualizadas no website. Ainda assim, recomenda-se a continuação das boas práticas de atualização e monitorização contínua das tecnologias utilizadas, garantindo que as mesmas se mantêm atualizadas e seguras.",
+      "description_single": "Verifica-se que a tecnologia __tech_update__ não está na sua última versão. Recomenda-se a atualização, caso possível, desta tecnologia, visando mitigar as vulnerabilidades enunciadas anteriormente.",
+      "description_multiple": "Verifica-se que as tecnologias __tech_update__ não estão nas suas últimas versões. Recomenda-se a atualização, caso possível, destas tecnologias, visando mitigar as vulnerabilidades enunciadas anteriormente."
+    }
+  ]
+}

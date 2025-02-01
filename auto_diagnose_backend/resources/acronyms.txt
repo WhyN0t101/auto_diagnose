@@ -1,0 +1,15 @@
+Acronyms
+
+BEAST  - Browser Exploit Against SSL/TLS
+CBC    - Cipher Block Chaining
+CCS    - ChangeCipherSpec
+CVE    - Common Vulnerabilities and Exposures
+CVSS   - Common Vulnerability Scoring System
+DROWN  - Decrypting RSA with Obsolete and Weakened eNcryption
+FREAK  - Factoring RSA Export Keys
+HTTP   - HyperText Transfer Protocol
+HTTPS  - HyperText Transfer Protocol Secure
+IIS    - Internet Information Services
+POODLE - Padding Oracle On Downgraded Legacy Encryption
+SSL    - Secure Socket Layer
+TLS    - Transport Layer Secure

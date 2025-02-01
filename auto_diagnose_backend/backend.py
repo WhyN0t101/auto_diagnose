@@ -12,6 +12,7 @@ FONT_DIR = os.path.join(BASE_DIR, "fonts")
 # Caminhos completos das fontes
 FONT_PATH = os.path.join(FONT_DIR, "DejaVuSans.ttf")
 FONT_PATH_BOLD = os.path.join(FONT_DIR, "DejaVuSans-Bold.ttf")
+IMAGE_DIR = os.path.join(BASE_DIR, "images")
 
 
 app = Flask(__name__)
@@ -101,12 +102,50 @@ def submit_answers():
         "recommendations": recommendations
     })
 
+TOOL_RECOMMENDATIONS = {
+    "Access Control": ["Okta", "Microsoft Entra ID (Azure AD)"],
+    "Data Protection": ["VeraCrypt", "BitLocker"],
+    "Employee Awareness and Training": ["KnowBe4", "Infosec IQ"],
+    "Governance and Policies": ["NIST Cybersecurity Framework", "CIS Controls"],
+    "Incident Response and Recovery": ["Splunk SOAR", "IBM Resilient"],
+    "Network Security": ["Snort", "Wireshark"],
+    "Third-Party Risk Management": ["OneTrust", "Prevalent"],
+}
+# PDF Class
+class PDF(FPDF):
+    def footer(self):
+        """ Add page numbers on all pages except cover. """
+        self.set_y(-15)
+        self.set_font("DejaVu", size=10)
+        if self.page_no() > 1:
+            self.cell(0, 10, f"Page {self.page_no()}", 0, 0, "C")
 
+# Function to get questions by language
+def get_questions_by_language(lang):
+    if lang not in ["en", "pt"]:
+        lang = "en"  # Default to English if unsupported language is requested
+    return [{**q, "category": q["category"][lang], "text": q["text"][lang],
+             "options": [{"text": opt["text"][lang], "score": opt["score"], "recommendation": opt["recommendation"][lang]} for opt in q["options"]]}
+            for q in questions_data]
+
+# Recommended cybersecurity tools based on categories
+TOOL_RECOMMENDATIONS = {
+    "Access Control": ["Okta", "Microsoft Entra ID (Azure AD)"],
+    "Data Protection": ["VeraCrypt", "BitLocker"],
+    "Employee Awareness and Training": ["KnowBe4", "Infosec IQ"],
+    "Governance and Policies": ["NIST Cybersecurity Framework", "CIS Controls"],
+    "Incident Response and Recovery": ["Splunk SOAR", "IBM Resilient"],
+    "Network Security": ["Snort", "Wireshark"],
+    "Third-Party Risk Management": ["OneTrust", "Prevalent"],
+}
 
 @app.route("/api/generate-pdf", methods=["POST"])
 def generate_pdf():
     data = request.json
     lang = request.args.get("lang", "en")  # Support language selection
+
+    # Load questions
+    questions = get_questions_by_language(lang)
 
     # Validate input
     if not data or "answers" not in data or "category_scores" not in data or "category_max_scores" not in data or "recommendations" not in data:
@@ -117,87 +156,80 @@ def generate_pdf():
     category_max_scores = data["category_max_scores"]
     recommendations = data["recommendations"]
 
-        # Calculate category percentages
+    # Calculate category percentages
     category_percentages = {
         category: (score / category_max_scores[category]) * 100 if category_max_scores[category] > 0 else 0
         for category, score in category_scores.items()
     }
+
     # Calculate overall score
     total_score = sum(category_scores.values())
     max_score = sum(category_max_scores.values())
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
 
-    # Identify categories below 50%
+    # Identify weak categories
     weak_categories = [category for category, percentage in category_percentages.items() if percentage < 50]
 
-    # Extract recommendations from answers
-    extracted_recommendations = []
-    for answer in answers:
-        if "recommendation" in answer:
-            extracted_recommendations.append(answer["recommendation"].get(lang, ""))
+    # Extract recommendations based on answers
+    extracted_recommendations = {}
+    for idx, answer in enumerate(answers):
+        if idx < len(questions):  # Ensure index is within range
+            question_text = questions[idx]["text"]
+            category = questions[idx]["category"]
+            
+            # Find the corresponding recommendation in the selected language
+            recommendation = next(
+                (opt["recommendation"] for opt in questions[idx]["options"] if opt["text"] == answer),
+                "No specific recommendation" if lang == "en" else "Sem recomendação específica"
+            )
 
-    # Suggested tools based on category scores (English and Portuguese versions)
-    tool_recommendations_en = {
-        "Access Control": ["Okta", "Microsoft Entra ID (Azure AD)"],
-        "Data Protection": ["VeraCrypt", "BitLocker"],
-        "Employee Awareness and Training": ["KnowBe4", "Infosec IQ"],
-        "Governance and Policies": ["NIST Cybersecurity Framework", "CIS Controls"],
-        "Incident Response and Recovery": ["Splunk SOAR", "IBM Resilient"],
-        "Network Security": ["Snort", "Wireshark"],
-        "Third-Party Risk Management": ["OneTrust", "Prevalent"]
-    }
+            if category not in extracted_recommendations:
+                extracted_recommendations[category] = []
+            extracted_recommendations[category].append(f"• {recommendation}")
 
-    tool_recommendations_pt = {
-        "Controlo de Acessos": ["Okta", "Microsoft Entra ID (Azure AD)"],
-        "Proteção de Dados": ["VeraCrypt", "BitLocker"],
-        "Consciencialização e Formação dos Funcionários": ["KnowBe4", "Infosec IQ"],
-        "Governança e Políticas": ["NIST Cybersecurity Framework", "CIS Controls"],
-        "Resposta a Incidentes e Recuperação": ["Splunk SOAR", "IBM Resilient"],
-        "Segurança de Rede": ["Snort", "Wireshark"],
-        "Gestão de Riscos de Terceiros": ["OneTrust", "Prevalent"]
-    }
+    # Filter suggested tools based on weak categories
+    suggested_tools = {cat: TOOL_RECOMMENDATIONS.get(cat, []) for cat in weak_categories}
 
-    # Determine which tool recommendation set to use based on language
-    tool_recommendations = tool_recommendations_en if lang == "en" else tool_recommendations_pt
-
-    # Filter and select recommended tools for weak categories
-    category_tool_recommendations = {
-        category: tool_recommendations.get(category, [])[:2]
-        for category in weak_categories if category in tool_recommendations
-    }
-
-    title = "Cybersecurity Diagnostic Report" if lang == "en" else "Relatório de Diagnóstico de Cibersegurança"
     # ✅ Create PDF
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.add_page()
 
+    # ✅ Load Fonts
     try:
         pdf.add_font("DejaVu", "", os.path.abspath(FONT_PATH), uni=True)
         pdf.add_font("DejaVu", "B", os.path.abspath(FONT_PATH_BOLD), uni=True)
-        print("✅ Fontes carregadas corretamente no FPDF.")
     except Exception as e:
-        print(f"🚨 Erro ao carregar fontes no FPDF: {e}")
+        print(f"🚨 Error loading fonts: {e}")
         raise
-    pdf.set_font("DejaVu", "", 12)  # Use DejaVu font
 
+    pdf.set_font("DejaVu", "", 12)
 
-    pdf.set_font("DejaVu", style="B", size=16)
-    pdf.cell(200, 10, txt=title, ln=True, align="C")
-    pdf.ln(10)
+    # ✅ **Front Page**
+    pdf.add_page()
+    pdf.image(os.path.join(IMAGE_DIR, "background.png"), x=0, y=0, w=210, h=297)
 
-    # ✅ Add Overall Score
-    pdf.set_font("DejaVu", style="B", size=14)
-    pdf.cell(0, 10, txt="Overall Score:" if lang == "en" else "Pontuação Geral:", ln=True)
-    pdf.set_font("DejaVu", size=12)
-    pdf.cell(0, 10, txt=f"{total_score}/{max_score} ({round(percentage_score, 2)}%)", ln=True)
-    pdf.ln(10)
+    pdf.set_font("DejaVu", "B", size=22)  # Reduced font size to fit within width
+    pdf.set_y(80)  # Adjust position
 
-    # ✅ Add Category Scores
-    pdf.set_font("DejaVu", style="B", size=14)
-    pdf.cell(0, 10, txt="Category Breakdown:" if lang == "en" else "Desempenho por Categoria:", ln=True)
+    # ✅ Use `multi_cell()` to avoid overflow
+    pdf.multi_cell(190, 10, txt="Cybersecurity Diagnostic Report" if lang == "en" else "Relatório de Diagnóstico de Cibersegurança",
+                align="C")
+
+    pdf.set_y(120)
+    pdf.set_font("DejaVu", size=14)
+    pdf.cell(0, 10, txt="Report Date: 2025", ln=True, align="C")
+
+    # ✅ Centering the logo properly
+    pdf.image(os.path.join(IMAGE_DIR, "logo_hq.png"), x=(210-50)/2, y=180, w=50)
+
+    pdf.image(os.path.join(IMAGE_DIR, "logo_hq.png"), x=80, y=180, w=50)
+
+    # ✅ Add Category Breakdown
+    pdf.add_page()
+    pdf.set_font("DejaVu", "B", size=18)
+    pdf.cell(0, 10, txt="Category Breakdown" if lang == "en" else "Desempenho por Categoria", ln=True)
     pdf.ln(5)
-    
+
     pdf.set_font("DejaVu", size=12)
     for category, score in category_scores.items():
         max_cat_score = category_max_scores.get(category, "N/A")
@@ -205,48 +237,42 @@ def generate_pdf():
 
     pdf.ln(10)
 
-    # ✅ Add Recommendations
-    pdf.set_font("DejaVu", style="B", size=14)
-    pdf.cell(0, 10, txt="Recommendations:" if lang == "en" else "Recomendações:", ln=True)
+    # ✅ **Recommendations**
+    pdf.add_page()
+    pdf.set_font("DejaVu", "B", size=18)
+    pdf.cell(0, 10, txt="Recommendations" if lang == "en" else "Recomendações", ln=True)
+    pdf.ln(5)
+
     pdf.set_font("DejaVu", size=12)
-    pdf.multi_cell(0, 10, recommendations)
+    for category, recs in extracted_recommendations.items():
+        pdf.set_font("DejaVu", style="B", size=14)
+        pdf.cell(0, 10, txt=category, ln=True)
+        pdf.ln(5)
+
+        pdf.set_font("DejaVu", size=12)
+        for rec in recs:
+            pdf.multi_cell(0, 8, rec)
+            pdf.ln(3)
+
     pdf.ln(10)
 
-    # **Only Add Suggested Tools if Any Exist**
-    if category_tool_recommendations:
-        pdf.set_font("DejaVu", style="B", size=14)
-        pdf.cell(200, 10, txt="Suggested Tools for Improvement:", ln=True)
+    # ✅ **Suggested Tools**
+    if suggested_tools:
+        pdf.add_page()
+        pdf.set_font("DejaVu", "B", size=18)
+        pdf.cell(0, 10, txt="Suggested Tools for Improvement" if lang == "en" else "Ferramentas Recomendadas", ln=True)
+        pdf.ln(5)
+
         pdf.set_font("DejaVu", size=12)
-        for category, tools in category_tool_recommendations.items():
-            pdf.multi_cell(0, 10, f"{category}: {', '.join(tools)}")
+        for category, tools in suggested_tools.items():
+            pdf.multi_cell(0, 8, f"{category}: {', '.join(tools)}")
         pdf.ln(10)
-        
-    pdf.set_font("DejaVu", style="B", size=14)
-    pdf.cell(0, 10, txt="Answers Summary:" if lang == "en" else "Respostas Escolhidas:", ln=True)
-    pdf.ln(5)
-    pdf.set_font("DejaVu", size=12)
-    for idx, answer in enumerate(answers):
-            question_text = questions_data[idx]["text"][lang]  # Get question text in the selected language
 
-            # Find the corresponding recommendation in the selected language
-            recommendation = next(
-                (opt["recommendation"][lang] for opt in questions_data[idx]["options"] if opt["text"][lang] == answer),
-                "No specific recommendation" if lang == "en" else "Sem recomendação específica"
-            )
-            
-            # Add question, answer, and recommendation to PDF
-            pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\n"
-                                f"{'Answer' if lang == 'en' else 'Resposta'}: {answer}\n"
-                                f"{'Recommendation' if lang == 'en' else 'Recomendação'}: {recommendation}")
-            pdf.ln(5) 
-
-
-    # ✅ Ensure proper encoding and output
+    # ✅ Save PDF and Send Response
     pdf_output = io.BytesIO()
-    pdf_bytes = pdf.output(dest="S").encode("latin1", "ignore")  # Use "ignore" to remove problematic chars
+    pdf_bytes = pdf.output(dest="S").encode("latin1", "ignore")
     pdf_output.write(pdf_bytes)
     pdf_output.seek(0)
-
 
     return send_file(
         pdf_output,
@@ -254,29 +280,8 @@ def generate_pdf():
         as_attachment=True,
         download_name="cybersecurity_diagnostic_report.pdf" if lang == "en" else "diagnostico_ciberseguranca.pdf",
     )
+
 if __name__ == "__main__":
     app.run(debug=True)
 
 
-'''
-    # ✅ Add Answers
-    pdf.set_font("Arial", style="B", size=14)
-    pdf.cell(200, 10, txt="Detailed Answers:" if lang == "en" else "Respostas Detalhadas:", ln=True)
-    pdf.ln(5)
-
-    pdf.set_font("Arial", size=12)
-    for idx, answer in enumerate(answers):
-        question_text = questions_data[idx]["text"][lang]  # Get question text in the selected language
-
-        # Find the corresponding recommendation in the selected language
-        recommendation = next(
-            (opt["recommendation"][lang] for opt in questions_data[idx]["options"] if opt["text"][lang] == answer),
-            "No specific recommendation" if lang == "en" else "Sem recomendação específica"
-        )
-        
-        # Add question, answer, and recommendation to PDF
-        pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\n"
-                            f"{'Answer' if lang == 'en' else 'Resposta'}: {answer}\n"
-                            f"{'Recommendation' if lang == 'en' else 'Recomendação'}: {recommendation}")
-        pdf.ln(5) 
-'''

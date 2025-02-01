@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ssl_tls_vulns",
+    "name": "BEAST",
+    "description": "A encriptação no TLS 1.0 ou anteriores pode ser rapidamente quebrada, então um atacante pode usar ataques MITM (Man-in-the-middle). Se um servidor suporta TLS 1.0 ou anteriores, o atacante também pode fazer com que ele acredite que é o único protocolo que o cliente pode usar.",
+      "mitigation": "Desligar o TLS 1.0 ou anterior. Os principais servidores web (Apache, Nginx, IIS) podem ser configurados da seguinte forma:\n\nApache: [https://shorturl.at/7mhYf](https://shorturl.at/7mhYf)\nNginx: [https://shorturl.at/gP6TD](https://shorturl.at/gP6TD)\nIIS: [https://shorturl.at/qs9TT](https://shorturl.at/gP6TD)"
+  },
+  {
+  "id": "ssl_tls_vulns",
+  "name": "DROWN",
+  "description": "A encriptação fraca, utilizada pelo SSLv2, pode ser explorada por um atacante para decifrar a chave de sessão, permitindo ao atacante interceptar e ler comunicações seguras entre o cliente e o servidor.",
+  "mitigation": "Desligar o TLS 1.0 ou anterior. Os principais servidores web (Apache, Nginx, IIS) podem ser configurados da seguinte forma:\n\nApache: [https://shorturl.at/7mhYf](https://shorturl.at/7mhYf)\nNginx: [https://shorturl.at/gP6TD](https://shorturl.at/gP6TD)\nIIS: [https://shorturl.at/qs9TT](https://shorturl.at/gP6TD)"
+  },
+  {
+  "id": "ssl_tls_vulns",
+  "name": "POODLE",
+  "description": "Um atacante pode forçar os browsers web a utilizar SSLv3, que é vulnerável a ataques do tipo POODLE. O atacante pode forçar o browser web a fazer downgrade para SSLv3 quando o TLS não está disponível, inserindo-se na sessão de comunicação entre o cliente e o servidor.",
+    "mitigation": "Desligar o TLS 1.0 ou anterior. Os principais servidores web (Apache, Nginx, IIS) podem ser configurados da seguinte forma:\n\nApache: [https://shorturl.at/7mhYf](https://shorturl.at/7mhYf)\nNginx: [https://shorturl.at/gP6TD](https://shorturl.at/gP6TD)\nIIS: [https://shorturl.at/qs9TT](https://shorturl.at/gP6TD)"
+  },
+  {
+  "id": "insecure_export_ciphers",
+  "name": "FREAK",
+  "description": "A utilização de cifras de exportação pode ser explorada por um atacante para fazer com que um servidor acredite que um cliente só suporta cifras de exportação. O atacante pode decifrar ou alterar a informação que está a ser transmitida.",
+  "mitigation": "Verificar as atualizações de segurança do sistema operativo (para Linux, atualizar o OpenSSL; para Windows (IIS), este problema não existe) e desligar o suporte a cifras de exportação inseguras (como o RSA de 512 bits)."
+  },
+  {
+  "id": "openssl_vulns",
+  "name": "ChangeCipherSpec (CCS)",
+  "description": "Um atacante pode explorar uma vulnerabilidade em certas comunicações OpenSSL que permitem o uso de chaves mestre de tamanho zero, o que pode levar a ataques MITM (Man-in-the-middle).",
+  "mitigation": "Verificar as atualizações de segurança do sistema operativo (para Linux, atualizar o OpenSSL; para Windows (IIS), este problema não existe)."
+  },
+  {
+  "id": "openssl_vulns",
+  "name": "LuckyMinus20",
+  "description": "Um atacante pode explorar um bug de padding (preenchimento) no OpenSSL.",
+  "mitigation": "Verificar as atualizações de segurança do sistema operativo (para Linux, atualizar o OpenSSL; para Windows (IIS), este problema não existe)."
+  },
+  {
+  "id": "tls_ciphers_vulns",
+  "name": "POODLE TLS",
+  "description": "A vulnerabilidade POODLE TLS verifica-se quando o servidor web suporta TLS 1.0, TLS 1.1 ou TLS 1.2, com o modo de cifra CBC (Cipher Block Chaining) ativo.",
+  "mitigation": "Verificar as atualizações de segurança do sistema operativo (para Linux, atualizar o OpenSSL; para Windows (IIS), este problema não existe). Se o servidor web suportar TLS 1.0, TLS 1.1 ou TLS 1.2, desativar o modo de cifra CBC. Recomenda-se a utilização do TLS 1.3."
+  },
+  {
+  "id": "openssl_heartbeat_vuln",
+  "name": "Heartbleed",
+  "description": "O Heartbleed é uma vulnerabilidade do OpenSSL que permite a um atacante ler a memória do servidor, o que pode incluir chaves privadas, credenciais de utilizador e outros dados sensíveis.",
+  "mitigation": "Atualizar o OpenSSL ou, caso isso seja impossível, recompilar o OpenSSL sem heartbeat (flag -DOPENSSL_NO_HEARTBEATS).\nMais informações sobre esta vulnerabilidade em [https://heartbleed.com/](https://heartbleed.com)"
+  }
+]

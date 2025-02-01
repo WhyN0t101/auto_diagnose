@@ -1,0 +1,4 @@
+{
+  "chapter": "Sumário Executivo",
+  "description": "Este documento é um sumário da análise preliminar ao website [__website__](__website__), realizada pelo Centro de Competências em Cibersegurança da zona Centro (CCC-Centro).\n\nEste relatório partilha os resultados obtidos ao fazer uma avaliação às vulnerabilidades SSL/TLS e às tecnologias utilizadas. A análise das vulnerabilidades SSL/TLS permitiu encontrar __num_ssl_vulns__ vulnerabilidades. A nível das tecnologias, foram encontradas __num_techs__ tecnologias, com um total de __num_vulns__ vulnerabilidades e __num_exp__ exploits.\n\nA metodologia de análise foi realizada recorrendo a testes manuais, embora fossem também suportados por ferramentas automatizadas, i.e., Qualys SSL Labs, CVEdetails.com.\n\nAs vulnerabilidades são descritas com maior detalhe posteriormente, neste relatório."
+}
