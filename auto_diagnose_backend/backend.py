@@ -126,8 +126,15 @@ def generate_pdf():
     total_score = sum(category_scores.values())
     max_score = sum(category_max_scores.values())
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
+
     # Identify categories below 50%
     weak_categories = [category for category, percentage in category_percentages.items() if percentage < 50]
+
+    # Extract recommendations from answers
+    extracted_recommendations = []
+    for answer in answers:
+        if "recommendation" in answer:
+            extracted_recommendations.append(answer["recommendation"].get(lang, ""))
 
     # Suggested tools based on category scores (English and Portuguese versions)
     tool_recommendations_en = {
@@ -217,13 +224,22 @@ def generate_pdf():
     pdf.set_font("DejaVu", style="B", size=14)
     pdf.cell(0, 10, txt="Answers Summary:" if lang == "en" else "Respostas Escolhidas:", ln=True)
     pdf.ln(5)
-
     pdf.set_font("DejaVu", size=12)
     for idx, answer in enumerate(answers):
-        pdf.multi_cell(0, 10, f"Q{idx + 1}: {answer}")
-        pdf.ln(2)
+            question_text = questions_data[idx]["text"][lang]  # Get question text in the selected language
 
-    
+            # Find the corresponding recommendation in the selected language
+            recommendation = next(
+                (opt["recommendation"][lang] for opt in questions_data[idx]["options"] if opt["text"][lang] == answer),
+                "No specific recommendation" if lang == "en" else "Sem recomendação específica"
+            )
+            
+            # Add question, answer, and recommendation to PDF
+            pdf.multi_cell(0, 10, f"Q{idx + 1}: {question_text}\n"
+                                f"{'Answer' if lang == 'en' else 'Resposta'}: {answer}\n"
+                                f"{'Recommendation' if lang == 'en' else 'Recomendação'}: {recommendation}")
+            pdf.ln(5) 
+
 
     # ✅ Ensure proper encoding and output
     pdf_output = io.BytesIO()
