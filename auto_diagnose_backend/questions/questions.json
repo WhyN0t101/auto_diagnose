@@ -1939,7 +1939,7 @@
         },
         "text":{
             "en":"Do you conduct regular incident response training exercises?",
-            "pt":"Você realiza exercícios de treino regular de resposta a incidentes?"
+            "pt":"Realiza exercícios de treino regular de resposta a incidentes?"
         },
         "options":[
             {
@@ -1985,7 +1985,7 @@
         },
         "text":{
             "en":"Do you have a cybersecurity awareness program in place for employees?",
-            "pt":"Você tem um programa de conscientização sobre cibersegurança para funcionários?"
+            "pt":"Tem um programa de conscientização sobre cibersegurança para funcionários?"
         },
         "options":[
             {
@@ -2031,7 +2031,7 @@
         },
         "text":{
             "en":"Do you enforce a data retention and deletion policy?",
-            "pt":"Você aplica uma política de retenção e exclusão de dados?"
+            "pt":"Aplica uma política de retenção e exclusão de dados?"
         },
         "options":[
             {
@@ -2077,7 +2077,7 @@
         },
         "text":{
             "en":"Do you ensure that vendors have cybersecurity insurance?",
-            "pt":"Você garante que os fornecedores tenham seguro de cibersegurança?"
+            "pt":"Garante que os fornecedores tenham seguro de cibersegurança?"
         },
         "options":[
             {
@@ -2123,7 +2123,7 @@
         },
         "text":{
             "en":"Do you implement role-based access controls (RBAC)?",
-            "pt":"Você implementa os controlos de acesso baseados em funções (RBAC)?"
+            "pt":"Implementa os controlos de acesso baseados em funções (RBAC)?"
         },
         "options":[
             {
@@ -2169,7 +2169,7 @@
         },
         "text":{
             "en":"Do you provide ongoing training on identifying and preventing phishing attacks?",
-            "pt":"Você fornece treino contínuo para identificar e prevenir ataques de phishing?"
+            "pt":"Fornece treino contínuo para identificar e prevenir ataques de phishing?"
         },
         "options":[
             {
@@ -2261,7 +2261,7 @@
         },
         "text":{
             "en":"Do you enforce strong password policies across the organization?",
-            "pt":"Você aplica políticas de senha fortes em toda a organização?"
+            "pt":"Aplica políticas de senha fortes em toda a organização?"
         },
         "options":[
             {
