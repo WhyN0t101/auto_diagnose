@@ -137,9 +137,3 @@ cd auto_diagnose
 - **Build Tools**: Vite.js for Vue.js development
 
 ---
-
-
----
-
-## **Contact**
-For inquiries or contributions, contact **[Your Name]** at **[Your Email]**.
