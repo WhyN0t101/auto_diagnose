@@ -77,7 +77,7 @@ cd auto_diagnose
    ```
 3. Start the development server:
    ```bash
-   npm run dev
+   npm run serve
    ```
 
    The frontend will be accessible at `http://127.0.0.1:5173`.
