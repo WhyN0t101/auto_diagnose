@@ -55,7 +55,7 @@ cd auto_diagnose
    ```
 3. Install dependencies:
    ```bash
-   pip install flask
+   pip install -r requirements.txt
    ```
 4. Run the Flask server:
    ```bash
