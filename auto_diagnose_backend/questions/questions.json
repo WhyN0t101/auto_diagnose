@@ -7,7 +7,7 @@
         },
         "text":{
             "en":"Do you have a written and approved cybersecurity policy?",
-            "pt":"Tem uma política de cibersegurança  escrita e aprovada?"
+            "pt":"Tem alguma política de cibersegurança escrita e aprovada?"
         },
         "options":[
             {
@@ -18,7 +18,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure the policy is regularly updated and aligned with evolving cybersecurity threats.",
-                    "pt":"Garanta que a política seja atualizada regularmente e alinhada com as ameaças de cibersegurança em evolução."
+                    "pt":"Garanta que a política seja atualizada regularmente e alinhada com as ameaças de cibersegurança."
                 }
             },
             {
@@ -40,7 +40,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Complete the development of your cybersecurity policy and seek expert validation.",
-                    "pt":"Finalize o desenvolvimento da sua política de cibersegurança e procure validação especializada."
+                    "pt":"Finalize o desenvolvimento da sua política de cibersegurança e procure uma validação especializada."
                 }
             }
         ]
@@ -53,7 +53,7 @@
         },
         "text":{
             "en":"Has your organization conducted a formal risk assessment in the past year?",
-            "pt":"A sua organização realizou uma avaliação formal de riscos no último ano?"
+            "pt":"A sua organização realizou alguma avaliação formal de riscos no último ano?"
         },
         "options":[
             {
@@ -86,7 +86,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Ensure the ongoing risk assessment covers all critical business areas.",
-                    "pt":"Garanta que a avaliação de riscos em curso abranja todas as áreas críticas do negócio."
+                    "pt":"Garanta que a avaliação de riscos em curso abranja todas as áreas críticas do seu negócio."
                 }
             }
         ]
@@ -145,7 +145,7 @@
         },
         "text":{
             "en":"Is multi-factor authentication (MFA) required for accessing critical systems?",
-            "pt":"A autenticação multifator (MFA) é obrigatória para acessar sistemas críticos?"
+            "pt":"A autenticação multifator (MFA) é obrigatória para aceder a sistemas críticos?"
         },
         "options":[
             {
@@ -191,7 +191,7 @@
         },
         "text":{
             "en":"Do you have a documented incident response plan?",
-            "pt":"Você tem um plano documentado de resposta a incidentes?"
+            "pt":"Tem um plano documentado de resposta a incidentes?"
         },
         "options":[
             {
@@ -293,8 +293,8 @@
                 },
                 "score":10,
                 "recommendation":{
-                    "en":"Continue with regular cybersecurity training and introduce phishing simulations.",
-                    "pt":"Continue com as formações regulares de cibersegurança e introduza simulações de phishing."
+                    "en":"Continue with regular cybersecurity training and introduce simulations (ex. phishing).",
+                    "pt":"Continue com as formações regulares de cibersegurança e introduza simulações (ex. phishing)."
                 }
             },
             {
@@ -397,7 +397,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement the necessary security measures to mitigate potential vulnerabilities.",
-                    "pt":"Implemente as medidas de segurança necessárias para mitigar vulnerabilidades potenciais."
+                    "pt":"Implemente as medidas de segurança necessárias para mitigar potenciais vulnerabilidades ."
                 }
             },
             {
@@ -421,7 +421,7 @@
         },
         "text":{
             "en":"Do you have an access control policy defining user roles and privileges?",
-            "pt":"Tem uma política de controlo de acesso que define funções e privilégios dos utilizadors?"
+            "pt":"Tem uma política de controlo de acesso que defina funções e privilégios dos utilizadors?"
         },
         "options":[
             {
@@ -467,7 +467,7 @@
         },
         "text":{
             "en":"Do you maintain a log of all user access to critical systems?",
-            "pt":"Mantém um log de todo o acesso do utilizador a sistemas críticos?"
+            "pt":"Mantém registos de todos o acessos do utilizador a sistemas críticos?"
         },
         "options":[
             {
@@ -478,7 +478,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue a aplicar controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -500,7 +500,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement strict access control mechanisms to prevent unauthorized access.",
-                    "pt":"Implementar mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
+                    "pt":"Implemente mecanismos estritos de controlos de acesso para evitar acesso não autorizado."
                 }
             }
         ]
@@ -513,7 +513,7 @@
         },
         "text":{
             "en":"Do you block access to malicious websites using a web filtering solution?",
-            "pt":"Você bloqueia o acesso a sites maliciosos usando uma solução de filtragem na web?"
+            "pt":"Bloqueia o acesso a sites maliciosos usando uma solução de filtragem na web?"
         },
         "options":[
             {
@@ -524,7 +524,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -546,7 +546,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
-                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
+                    "pt":"Implemente firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
@@ -559,7 +559,7 @@
         },
         "text":{
             "en":"Do you block unauthorized devices from accessing your network?",
-            "pt":"Você bloqueia os dispositivos não autorizados de acessar a sua rede?"
+            "pt":"Bloqueia os dispositivos não autorizados de aceder a sua rede?"
         },
         "options":[
             {
@@ -570,7 +570,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -581,7 +581,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Strengthen network security by adding additional monitoring and segmentation controls.",
-                    "pt":"Fortalecer a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
+                    "pt":"Fortaleça a segurança da rede adicionando controlos adicionais de monitorização e segmentação."
                 }
             },
             {
@@ -592,7 +592,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement firewall, IDS\/IPS, and network segmentation to improve security.",
-                    "pt":"Implementar firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
+                    "pt":"Implemente firewall, IDS\/IPS e segmentação de rede para melhorar a segurança."
                 }
             }
         ]
@@ -605,7 +605,7 @@
         },
         "text":{
             "en":"Do you conduct third-party audits of your cybersecurity program?",
-            "pt":"Você realiza auditorias de terceiros do seu programa de cibersegurança?"
+            "pt":"Realiza auditorias de terceiros no seu programa de cibersegurança?"
         },
         "options":[
             {
@@ -616,7 +616,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -651,7 +651,7 @@
         },
         "text":{
             "en":"Do you restrict access to sensitive data based on employee roles?",
-            "pt":"Você restringe o acesso a dados confidenciais com base nas funções dos funcionários?"
+            "pt":"Restringe o acesso a dados confidenciais com base nas funções dos funcionários?"
         },
         "options":[
             {
@@ -662,7 +662,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
@@ -697,7 +697,7 @@
         },
         "text":{
             "en":"Do you regularly review and update your cybersecurity policies?",
-            "pt":"Você revisa e atualiza regularmente as suas políticas de cibersegurança?"
+            "pt":"Revê e atualiza regularmente as suas políticas de cibersegurança?"
         },
         "options":[
             {
@@ -708,7 +708,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -719,7 +719,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance governance measures by aligning with industry best practices.",
-                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                    "pt":"Aumente as medidas de governança alinhando-se às melhores práticas do setor."
                 }
             },
             {
@@ -754,7 +754,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue a aplicando controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -785,11 +785,11 @@
         "id":22,
         "category":{
             "en":"Third-Party Risk Management",
-            "pt":"Gerenciamento de riscos de terceiros"
+            "pt":"Gestão de riscos de terceiros"
         },
         "text":{
             "en":"Do you require third-party vendors to adhere to your cybersecurity policies?",
-            "pt":"Você precisa de fornecedores de terceiros para aderir às suas políticas de cibersegurança?"
+            "pt":"Precisa de fornecedores de terceiros para aderir às suas políticas de cibersegurança?"
         },
         "options":[
             {
@@ -822,7 +822,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement a vendor risk management program to evaluate third-party security.",
-                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                    "pt":"Implemente um programa de gestão de riscos de fornecedores para avaliar a segurança de terceiros."
                 }
             }
         ]
@@ -835,7 +835,7 @@
         },
         "text":{
             "en":"Do you have a firewall installed and configured on your network?",
-            "pt":"Você tem uma firewall instalada e configurado na sua rede?"
+            "pt":"Tem uma firewall instalada e configurado na sua rede?"
         },
         "options":[
             {
@@ -846,7 +846,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -892,7 +892,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -927,7 +927,7 @@
         },
         "text":{
             "en":"Do you segment your network to isolate sensitive data?",
-            "pt":"Você segenta a sua rede para isolar dados confidenciais?"
+            "pt":"Segmenta a sua rede para isolar dados confidenciais?"
         },
         "options":[
             {
@@ -938,7 +938,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -973,7 +973,7 @@
         },
         "text":{
             "en":"Do you allocate a specific budget for cybersecurity initiatives?",
-            "pt":"Você aloca um orçamento específico para iniciativas de cibersegurança?"
+            "pt":"Aloca um orçamento específico para iniciativas de cibersegurança?"
         },
         "options":[
             {
@@ -984,7 +984,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -995,7 +995,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance governance measures by aligning with industry best practices.",
-                    "pt":"Aumente as medidas de governança alinhando -se às melhores práticas do setor."
+                    "pt":"Aumente as medidas de governança alinhando-se às melhores práticas do setor."
                 }
             },
             {
@@ -1019,7 +1019,7 @@
         },
         "text":{
             "en":"Do you monitor network traffic for suspicious activities?",
-            "pt":"Você monitora o tráfego de rede em busca de atividades suspeitas?"
+            "pt":"Monitoriza o tráfego de rede em busca de atividades suspeitas?"
         },
         "options":[
             {
@@ -1030,7 +1030,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -1065,7 +1065,7 @@
         },
         "text":{
             "en":"Do you have a secure method for sharing sensitive information internally?",
-            "pt":"Você tem um método seguro para compartilhar informações confidenciais internamente?"
+            "pt":"Tem um método seguro para compartilhar informações confidenciais internamente?"
         },
         "options":[
             {
@@ -1076,7 +1076,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
@@ -1168,7 +1168,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue aplicando controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -1306,7 +1306,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
@@ -1352,7 +1352,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue aplicando controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -1536,7 +1536,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -1582,7 +1582,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -1720,7 +1720,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Regularly review and update network security configurations and segment networks appropriately.",
-                    "pt":"Revise e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
+                    "pt":"Reveja e atualize regularmente as configurações de segurança de rede e as redes de segmentos adequadamente."
                 }
             },
             {
@@ -1766,7 +1766,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue aplicando controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -1858,7 +1858,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -1889,7 +1889,7 @@
         "id":47,
         "category":{
             "en":"Third-Party Risk Management",
-            "pt":"Gerenciamento de riscos de terceiros"
+            "pt":"Gestão de riscos de terceiros"
         },
         "text":{
             "en":"Do you require vendors to follow data protection regulations (e.g., GDPR, HIPAA)?",
@@ -1926,7 +1926,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement a vendor risk management program to evaluate third-party security.",
-                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                    "pt":"Implemente um programa de gestão de riscos de fornecedores para avaliar a segurança de terceiros."
                 }
             }
         ]
@@ -1996,7 +1996,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Maintain a strong governance framework and review policies periodically.",
-                    "pt":"Mantenha uma forte estrutura de governança e revise as políticas periodicamente."
+                    "pt":"Mantenha uma forte estrutura de governança e reveja as políticas periodicamente."
                 }
             },
             {
@@ -2042,7 +2042,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
@@ -2073,7 +2073,7 @@
         "id":38,
         "category":{
             "en":"Third-Party Risk Management",
-            "pt":"Gerenciamento de riscos de terceiros"
+            "pt":"Gestão de riscos de terceiros"
         },
         "text":{
             "en":"Do you ensure that vendors have cybersecurity insurance?",
@@ -2110,7 +2110,7 @@
                 "score":0,
                 "recommendation":{
                     "en":"Implement a vendor risk management program to evaluate third-party security.",
-                    "pt":"Implemente um programa de gerenciamento de riscos de fornecedores para avaliar a segurança de terceiros."
+                    "pt":"Implemente um programa de gestão de riscos de fornecedores para avaliar a segurança de terceiros."
                 }
             }
         ]
@@ -2134,7 +2134,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
@@ -2226,7 +2226,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e revise as políticas regularmente."
+                    "pt":"Continue aplicando controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -2272,7 +2272,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Ensure encryption standards remain updated and review data protection policies regularly.",
-                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e revise as políticas de proteção de dados regularmente."
+                    "pt":"Verifique se os padrões de criptografia permanecem atualizados e reveja as políticas de proteção de dados regularmente."
                 }
             },
             {
