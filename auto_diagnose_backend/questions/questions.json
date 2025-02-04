@@ -375,7 +375,7 @@
         },
         "text":{
             "en":"Do you comply with GDPR, ISO 27001, or other relevant data protection regulations?",
-            "pt":"Você está em conformidade com o GDPR, ISO 27001 ou outros regulamentos de proteção de dados?"
+            "pt":"Está em conformidade com o GDPR, ISO 27001 ou outros regulamentos de proteção de dados?"
         },
         "options":[
             {
@@ -489,7 +489,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
@@ -739,7 +739,7 @@
         "id":14,
         "category":{
             "en":"Access Control",
-            "pt":"controlos de acesso"
+            "pt":"Controlos de acesso"
         },
         "text":{
             "en":"Are administrative privileges restricted to essential personnel?",
@@ -765,7 +765,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
@@ -881,7 +881,7 @@
         },
         "text":{
             "en":"Do you use Virtual Private Networks (VPNs) for remote access?",
-            "pt":"Você usa redes privadas virtuais (VPNs) para acesso remoto?"
+            "pt":"Usa redes privadas virtuais (VPNs) para acesso remoto?"
         },
         "options":[
             {
@@ -1111,7 +1111,7 @@
         },
         "text":{
             "en":"Do you have automated tools to detect and respond to security incidents?",
-            "pt":"Você tem ferramentas automatizadas para detectar e responder a incidentes de segurança?"
+            "pt":"Tem ferramentas automatizadas para detectar e responder a incidentes de segurança?"
         },
         "options":[
             {
@@ -1179,7 +1179,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
@@ -1203,7 +1203,7 @@
         },
         "text":{
             "en":"Do you conduct phishing simulation exercises?",
-            "pt":"Você conduz exercícios de simulação de phishing?"
+            "pt":"Conduta exercícios de simulação de phishing?"
         },
         "options":[
             {
@@ -1214,7 +1214,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue regular security awareness training and phishing simulations.",
-                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
+                    "pt":"Continue com simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
@@ -1249,7 +1249,7 @@
         },
         "text":{
             "en":"Do you train employees on securely using mobile and personal devices for work?",
-            "pt":"Você treina funcionários com segurança usando dispositivos móveis e pessoais para o trabalho?"
+            "pt":"Treina funcionários com segurança usando dispositivos móveis e pessoais para o trabalho?"
         },
         "options":[
             {
@@ -1374,7 +1374,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             }
         ]
@@ -1433,7 +1433,7 @@
         },
         "text":{
             "en":"Do you conduct mandatory cybersecurity awareness training for new hires?",
-            "pt":"Você conduz treino obrigatório de conscientização sobre cibersegurança para novas contratações?"
+            "pt":"Conduta treino obrigatório de conscientização sobre cibersegurança para novas contratações?"
         },
         "options":[
             {
@@ -1479,7 +1479,7 @@
         },
         "text":{
             "en":"Do you provide training on safe browsing practices?",
-            "pt":"Você fornece treino sobre práticas de navegação segura?"
+            "pt":"Fornece treino sobre práticas de navegação segura?"
         },
         "options":[
             {
@@ -1490,7 +1490,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue regular security awareness training and phishing simulations.",
-                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
+                    "pt":"Continue com simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
@@ -1525,7 +1525,7 @@
         },
         "text":{
             "en":"Do you conduct security assessments on cloud services used by your organization?",
-            "pt":"Você realiza avaliações de segurança nos serviços em nuvem usados ​​por sua organização?"
+            "pt":"Realiza avaliações de segurança nos serviços em nuvem usados ​​por sua organização?"
         },
         "options":[
             {
@@ -1617,7 +1617,7 @@
         },
         "text":{
             "en":"Do employees report phishing attempts and suspicious emails?",
-            "pt":"Os funcionários relatam tentativas de phishing e e -mails suspeitos?"
+            "pt":"Os funcionários relatam tentativas de phishing e e-mails suspeitos?"
         },
         "options":[
             {
@@ -1628,7 +1628,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue regular security awareness training and phishing simulations.",
-                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
+                    "pt":"Continue com simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
@@ -1663,7 +1663,7 @@
         },
         "text":{
             "en":"Do you regularly communicate cybersecurity updates to employees?",
-            "pt":"Você comunica regularmente atualizações de cibersegurança aos funcionários?"
+            "pt":"Comunica regularmente atualizações de cibersegurança aos funcionários?"
         },
         "options":[
             {
@@ -1674,7 +1674,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue regular security awareness training and phishing simulations.",
-                    "pt":"Continue simulações regulares de treino e phishing de conscientização de segurança."
+                    "pt":"Continue com simulações regulares de treino e phishing de conscientização de segurança."
                 }
             },
             {
@@ -1709,7 +1709,7 @@
         },
         "text":{
             "en":"Do you use intrusion detection and prevention systems (IDS\/IPS)?",
-            "pt":"Você usa sistemas de detecção e prevenção de intrusões (IDS\/IPS)?"
+            "pt":"Utiliza sistemas de detecção e prevenção de intrusões (IDS\/IPS)?"
         },
         "options":[
             {
@@ -1766,7 +1766,7 @@
                 "score":10,
                 "recommendation":{
                     "en":"Continue enforcing strict access controls and review policies regularly.",
-                    "pt":"Continue aplicando controlos rígidos de acesso e reveja as políticas regularmente."
+                    "pt":"Continue a aplicar controlos rígidos de acesso e reveja as políticas regularmente."
                 }
             },
             {
@@ -1777,7 +1777,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
@@ -1801,7 +1801,7 @@
         },
         "text":{
             "en":"Do you maintain a log of all security incidents and breaches?",
-            "pt":"Você mantém um registro de todos os incidentes de segurança e violações?"
+            "pt":"Mantém um registo de todos os incidentes de segurança e violações?"
         },
         "options":[
             {
@@ -1847,7 +1847,7 @@
         },
         "text":{
             "en":"Do you perform annual cybersecurity risk assessments?",
-            "pt":"Você realiza avaliações anuais de risco de cibersegurança?"
+            "pt":"Realiza avaliações anuais de risco de cibersegurança?"
         },
         "options":[
             {
@@ -1893,7 +1893,7 @@
         },
         "text":{
             "en":"Do you require vendors to follow data protection regulations (e.g., GDPR, HIPAA)?",
-            "pt":"Você exige que os fornecedores sigam os regulamentos de proteção de dados (por exemplo, GDPR, HIPAA)?"
+            "pt":"Exige que os fornecedores sigam os regulamentos de proteção de dados (por exemplo, GDPR, HIPAA)?"
         },
         "options":[
             {
@@ -2237,7 +2237,7 @@
                 "score":5,
                 "recommendation":{
                     "en":"Enhance access control measures by implementing multi-factor authentication.",
-                    "pt":"Aprimore as medidas de controlos de acesso implementando a autenticação multifatorial."
+                    "pt":"Melhore as medidas de controlos de acesso implementando a autenticação multifatorial."
                 }
             },
             {
