@@ -139,6 +139,17 @@ TOOL_RECOMMENDATIONS = {
     "Third-Party Risk Management": ["OneTrust", "Prevalent"],
 }
 
+CATEGORY_MAPPING = {
+    "governança e políticas": "Governance and Policies",
+    "proteção de dados": "Data Protection",
+    "controle de acesso": "Access Control",
+    "treinamento e conscientização de funcionários": "Employee Awareness and Training",
+    "resposta e recuperação de incidentes": "Incident Response and Recovery",
+    "segurança de rede": "Network Security",
+    "gestão de risco de terceiros": "Third-Party Risk Management",
+}
+
+
 @app.route("/api/generate-pdf", methods=["POST"])
 def generate_pdf():
     data = request.json
@@ -168,7 +179,11 @@ def generate_pdf():
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
 
     # Identify weak categories
-    weak_categories = [category for category, percentage in category_percentages.items() if percentage < 50]
+    weak_categories = [
+        category.strip().lower() for category, percentage in category_percentages.items() if percentage < 50
+    ]
+    weak_categories_english = [CATEGORY_MAPPING.get(cat, cat) for cat in weak_categories]
+
 
     # Extract recommendations based on answers
     extracted_recommendations = {}
@@ -188,7 +203,9 @@ def generate_pdf():
             extracted_recommendations[category].append(f"• {recommendation}")
 
     # Filter suggested tools based on weak categories
-    suggested_tools = {cat: TOOL_RECOMMENDATIONS.get(cat, []) for cat in weak_categories}
+    suggested_tools = {
+        cat: TOOL_RECOMMENDATIONS.get(cat, []) for cat in weak_categories_english
+    }
 
     # ✅ Create PDF
     pdf = FPDF()
@@ -256,8 +273,9 @@ def generate_pdf():
 
     pdf.ln(10)
 
-    # ✅ **Suggested Tools**
-    if suggested_tools:
+    REVERSE_CATEGORY_MAPPING = {v: k for k, v in CATEGORY_MAPPING.items()}
+
+    if suggested_tools and any(tools for tools in suggested_tools.values()):  # Ensure at least one tool exists
         pdf.add_page()
         pdf.set_font("DejaVu", "B", size=18)
         pdf.cell(0, 10, txt="Suggested Tools for Improvement" if lang == "en" else "Ferramentas Recomendadas", ln=True)
@@ -265,14 +283,27 @@ def generate_pdf():
 
         pdf.set_font("DejaVu", size=12)
         for category, tools in suggested_tools.items():
-            pdf.multi_cell(0, 8, f"{category}: {', '.join(tools)}")
-        pdf.ln(10)
+            # Se a linguagem for PT, converte os nomes das categorias para português
+            category_display = REVERSE_CATEGORY_MAPPING.get(category, category) if lang == "pt" else category
+
+            if tools:  # Ensure there are tools before printing
+                pdf.set_font("DejaVu", "B", size=14)
+                pdf.cell(0, 10, txt=category_display, ln=True)
+                pdf.ln(3)
+                pdf.set_font("DejaVu", size=12)
+                for tool in tools:
+                    pdf.cell(0, 8, txt=f"• {tool}", ln=True)
+                pdf.ln(5)
 
     # ✅ Save PDF and Send Response
     pdf_output = io.BytesIO()
     pdf_bytes = pdf.output(dest="S").encode("latin1", "ignore")
     pdf_output.write(pdf_bytes)
     pdf_output.seek(0)
+    print("✅ Weak Categories:", weak_categories_english)
+    print("🔍 Suggested Tools Mapping:", suggested_tools)
+
+
 
     return send_file(
         pdf_output,
